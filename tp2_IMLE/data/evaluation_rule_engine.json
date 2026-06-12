@@ -1,0 +1,61 @@
+{
+  "num_rules": 3,
+  "metrics": {
+    "rule_parse_rate": 100.0,
+    "rule_correctness": 100.0,
+    "ambiguity_detection": 100.0
+  },
+  "details": [
+    {
+      "rule_id": "RULE_001",
+      "natural_language": "Avisa-me quando a prateleira inferior estiver mais de 70% vazia",
+      "parsed_ok": true,
+      "validation_is_valid": false,
+      "ambiguities": [
+        "Qual o nível de alerta (info, warning, critical) a ser utilizado?",
+        "Qual a mensagem de notificação a ser enviada?"
+      ],
+      "synthetic_tests": []
+    },
+    {
+      "rule_id": "RULE_002",
+      "natural_language": "Avisa-me quando a prateleira tiver fill rate abaixo de 85%.",
+      "parsed_ok": true,
+      "validation_is_valid": false,
+      "ambiguities": [
+        "Qual o nível de alerta desejado (informativo, aviso, crítico)?",
+        "A que zonas se aplica esta regra? (Se não especificado, será aplicada a todas as zonas?)",
+        "Existem tipos de problema específicos a considerar, além do fill rate? (Se não especificado, a regra foca-se apenas no fill rate.)",
+        "Existe um filtro de tempo (horas de início e fim) para esta regra?",
+        "Existe um limiar de severidade associado a esta regra?"
+      ],
+      "synthetic_tests": []
+    },
+    {
+      "rule_id": "RULE_003",
+      "natural_language": "Quando o fill rate de qualquer zona for inferior a 80%, gerar alerta crítico e pedir reposição imediata.",
+      "parsed_ok": true,
+      "validation_is_valid": true,
+      "ambiguities": [],
+      "synthetic_tests": [
+        {
+          "inspection_id": "SYN_001",
+          "predicted_trigger": true,
+          "expected_trigger": true,
+          "correct": true
+        },
+        {
+          "inspection_id": "SYN_002",
+          "predicted_trigger": false,
+          "expected_trigger": false,
+          "correct": true
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "RULE_001 e RULE_002 foram mantidas como exemplos de regras ambíguas/incompletas detetadas pelo sistema.",
+    "RULE_003 é a regra válida usada para testar execução operacional sobre inspeções sintéticas.",
+    "A avaliação é local e não depende da API Gemini."
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "inspection_id": "EVAL_cot_visual_normal_test_46_953bde99",
+  "timestamp": "2026-06-12T20:13:20Z",
+  "image_path": "data/evaluation_prompting/normal/test_46.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira superior, lado direito",
+      "severity": "low",
+      "description": "Pequeno espaço vazio onde um produto Carmex poderia estar, junto ao expositor existente.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.02
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "misaligned",
+      "location": "prateleiras intermédias, geral",
+      "severity": "low",
+      "description": "Várias caixas de produtos (ex: Claritin, Benadryl, Motrin) ligeiramente desalinhadas ou empurradas para trás.",
+      "confidence": 0.8,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "segunda prateleira de cima, lado direito",
+      "severity": "low",
+      "description": "Pequeno espaço vazio entre produtos Mucinex e DayQuil.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.02
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "empty_shelf",
+      "location": "terceira prateleira de cima, lado direito",
+      "severity": "low",
+      "description": "Pequeno espaço vazio entre produtos DayQuil/NyQuil e Airborne.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.02
+    },
+    {
+      "issue_id": "ISS_005",
+      "type": "empty_shelf",
+      "location": "quarta prateleira de cima, lado direito",
+      "severity": "low",
+      "description": "Pequeno espaço vazio entre produtos Vicks VapoRub e Theraflu.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.02
+    },
+    {
+      "issue_id": "ISS_006",
+      "type": "misaligned",
+      "location": "prateleira inferior, lado direito",
+      "severity": "low",
+      "description": "Sacos de Ricola ligeiramente desorganizados ou inclinados.",
+      "confidence": 0.8,
+      "affected_area_pct": 0.03
+    }
+  ],
+  "shelf_fill_rate": 0.92,
+  "products_detected": [
+    "Alívio de Alergias",
+    "Alívio de Constipações e Gripe",
+    "Suporte Imunitário",
+    "Alívio da Dor",
+    "Cuidados Labiais",
+    "Tiras Nasais",
+    "Pastilhas para a Garganta",
+    "Xaropes para a Tosse",
+    "Medicamentos Pediátricos",
+    "Alívio de Náuseas"
+  ],
+  "model_reasoning": "Prateleira superior: Pequeno espaço vazio junto a produtos Carmex. Prateleiras intermédias: Várias caixas de produtos ligeiramente desalinhadas e pequenos espaços vazios pontuais. Prateleira inferior: Sacos de Ricola ligeiramente desorganizados.",
+  "summary": "Inspeção realizada em 2026-06-12T20:13:20Z na zona 'all' para a imagem 'data/evaluation_prompting/normal/test_46.jpg'. O estado geral é 'warning' devido a múltiplos pequenos espaços vazios (empty_shelf) e desalinhamentos de produtos (misaligned) em várias prateleiras, todos de severidade baixa. A taxa de ocupação da prateleira é de 92%. Foram detetados produtos de alívio de alergias, constipações, gripes, dores, cuidados labiais e outros medicamentos de venda livre.",
+  "prompt_strategy": "cot_visual"
+}

@@ -1,0 +1,66 @@
+{
+  "inspection_id": "INS_20260612_180152_Z_S1",
+  "timestamp": "2026-06-12T18:01:52Z",
+  "image_path": "/Users/joaonunofonseca/Downloads/tp2_novo/data/images/uploads/20260612_190152_train_344.jpg",
+  "zone_id": "Z_S1",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "misaligned",
+      "location": "prateleira intermédia superior, centro-direita",
+      "severity": "low",
+      "description": "Um saco de café Starbucks está ligeiramente desalinhado e recuado.",
+      "confidence": 0.9,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "misaligned",
+      "location": "prateleira intermédia, lado direito",
+      "severity": "low",
+      "description": "Um saco de café Gevalia está ligeiramente inclinado.",
+      "confidence": 0.9,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "misaligned",
+      "location": "prateleira inferior, centro",
+      "severity": "low",
+      "description": "Algumas garrafas de xarope Torani estão ligeiramente desalinhadas.",
+      "confidence": 0.8,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "misaligned",
+      "location": "prateleira inferior, lado direito",
+      "severity": "low",
+      "description": "Um creme Baileys está ligeiramente inclinado.",
+      "confidence": 0.8,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_005",
+      "type": "misaligned",
+      "location": "prateleira inferior, lado direito",
+      "severity": "low",
+      "description": "Vários cremes de café estão ligeiramente desalinhados.",
+      "confidence": 0.8,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 0.9,
+  "products_detected": [
+    "café engarrafado",
+    "sacos de café",
+    "café instantâneo",
+    "café moído",
+    "cold brew",
+    "xaropes para café",
+    "cremes para café"
+  ],
+  "model_reasoning": "Prateleira superior: Produtos Starbucks engarrafados bem organizados. Prateleira intermédia superior: Sacos de café Starbucks e outras marcas, com um saco ligeiramente desalinhado. Prateleira intermédia: Frascos Maxwell House, garrafas Gevalia Cold Brew e sacos de café Gevalia/Great Value, com um saco Gevalia ligeiramente inclinado. Prateleira inferior: Frascos de café, xaropes e cremes, com alguns produtos ligeiramente desalinhados ou inclinados. Prateleira inferior: Cremes de café, bem preenchida, com alguns produtos ligeiramente desalinhados.",
+  "summary": "Inspeção da zona Z_S1 em 2026-06-12T18:01:52Z. A taxa de ocupação da prateleira é de 0.9. Foram detetados problemas de desalinhamento de produtos com severidade baixa em várias prateleiras, incluindo sacos de café Starbucks e Gevalia, garrafas de xarope Torani e cremes de café Baileys e Coffee-mate. Os produtos visíveis incluem café engarrafado, sacos de café, café instantâneo, café moído, cold brew, xaropes e cremes para café. O estado geral é 'warning' devido a estes pequenos problemas de organização."
+}

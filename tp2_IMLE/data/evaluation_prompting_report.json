@@ -1,0 +1,751 @@
+{
+  "dataset": {
+    "ground_truth_path": "data/ground_truth.json",
+    "num_images": 15
+  },
+  "strategies": {
+    "zero_shot": {
+      "strategy": "zero_shot",
+      "total_ground_truth_images": 15,
+      "outputs_found": 12,
+      "json_parse_rate": 80.0,
+      "issue_detection_rate": 40.0,
+      "false_positive_rate": 73.33,
+      "severity_accuracy": 60.0,
+      "status_accuracy": 33.33,
+      "hallucination_rate": 0.0,
+      "details": [
+        {
+          "image_path": "data/evaluation_prompting/ambiguous/test_132.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "ok",
+          "expected_issue_types": [
+            "other"
+          ],
+          "predicted_issue_types": [
+            "misaligned",
+            "empty_shelf",
+            "empty_shelf",
+            "misaligned"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": false,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/ambiguous/test_171 copy.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "warning",
+          "expected_issue_types": [
+            "other"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "misaligned"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": false,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/ambiguous/test_171.jpg",
+          "found_output": false,
+          "expected_issue_types": [
+            "other"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy 2.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "warning",
+          "expected_issue_types": [
+            "misaligned"
+          ],
+          "predicted_issue_types": [
+            "other",
+            "wrong_product",
+            "misaligned",
+            "empty_shelf"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy.jpg",
+          "found_output": false,
+          "expected_issue_types": [
+            "misaligned"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/dirty_misaligned/test_137.jpg",
+          "found_output": false,
+          "expected_issue_types": [
+            "misaligned"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/empty_shelf/test_280.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "warning",
+          "expected_issue_types": [
+            "empty_shelf"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "misaligned"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/empty_shelf/test_303.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "critical",
+          "expected_issue_types": [
+            "empty_shelf"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "misaligned"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/empty_shelf/test_39.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "critical",
+          "expected_issue_types": [
+            "empty_shelf"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "empty_shelf"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/normal/test_29.jpg",
+          "found_output": true,
+          "expected_status": "ok",
+          "predicted_status": "warning",
+          "expected_issue_types": [],
+          "predicted_issue_types": [
+            "other",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/normal/test_46.jpg",
+          "found_output": true,
+          "expected_status": "ok",
+          "predicted_status": "warning",
+          "expected_issue_types": [],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "misaligned"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/normal/test_51.jpg",
+          "found_output": true,
+          "expected_status": "ok",
+          "predicted_status": "warning",
+          "expected_issue_types": [],
+          "predicted_issue_types": [
+            "other",
+            "empty_shelf"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/wrong_product/test_127.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "warning",
+          "expected_issue_types": [
+            "wrong_product"
+          ],
+          "predicted_issue_types": [
+            "misaligned",
+            "misaligned",
+            "misaligned",
+            "misaligned"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": false,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/wrong_product/test_209.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "warning",
+          "expected_issue_types": [
+            "wrong_product"
+          ],
+          "predicted_issue_types": [
+            "misaligned",
+            "wrong_product"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/wrong_product/test_498.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "critical",
+          "expected_issue_types": [
+            "wrong_product"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "misaligned",
+            "empty_shelf",
+            "misaligned",
+            "empty_shelf",
+            "misaligned",
+            "wrong_product",
+            "empty_shelf",
+            "misaligned",
+            "empty_shelf",
+            "misaligned"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        }
+      ]
+    },
+    "cot_visual": {
+      "strategy": "cot_visual",
+      "total_ground_truth_images": 15,
+      "outputs_found": 12,
+      "json_parse_rate": 80.0,
+      "issue_detection_rate": 33.33,
+      "false_positive_rate": 66.67,
+      "severity_accuracy": 53.33,
+      "status_accuracy": 6.67,
+      "hallucination_rate": 0.0,
+      "details": [
+        {
+          "image_path": "data/evaluation_prompting/ambiguous/test_132.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "critical",
+          "expected_issue_types": [
+            "other"
+          ],
+          "predicted_issue_types": [
+            "misaligned",
+            "misaligned",
+            "other"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/ambiguous/test_171 copy.jpg",
+          "found_output": false,
+          "expected_issue_types": [
+            "other"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/ambiguous/test_171.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "ok",
+          "expected_issue_types": [
+            "other"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false,
+          "severity_valid": false,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy 2.jpg",
+          "found_output": false,
+          "expected_issue_types": [
+            "misaligned"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy.jpg",
+          "found_output": false,
+          "expected_issue_types": [
+            "misaligned"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/dirty_misaligned/test_137.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "critical",
+          "expected_issue_types": [
+            "misaligned"
+          ],
+          "predicted_issue_types": [
+            "wrong_product",
+            "empty_shelf",
+            "empty_shelf",
+            "other",
+            "misaligned"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/empty_shelf/test_280.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "critical",
+          "expected_issue_types": [
+            "empty_shelf"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "empty_shelf",
+            "misaligned"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/empty_shelf/test_303.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "critical",
+          "expected_issue_types": [
+            "empty_shelf"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "misaligned"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/empty_shelf/test_39.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "critical",
+          "expected_issue_types": [
+            "empty_shelf"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "empty_shelf"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/normal/test_29.jpg",
+          "found_output": true,
+          "expected_status": "ok",
+          "predicted_status": "warning",
+          "expected_issue_types": [],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "empty_shelf"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/normal/test_46.jpg",
+          "found_output": true,
+          "expected_status": "ok",
+          "predicted_status": "warning",
+          "expected_issue_types": [],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "misaligned",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "misaligned"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/normal/test_51.jpg",
+          "found_output": true,
+          "expected_status": "ok",
+          "predicted_status": "warning",
+          "expected_issue_types": [],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "wrong_product"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/wrong_product/test_127.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "critical",
+          "expected_issue_types": [
+            "wrong_product"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "empty_shelf"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": false,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/wrong_product/test_209.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "warning",
+          "expected_issue_types": [
+            "wrong_product"
+          ],
+          "predicted_issue_types": [
+            "misaligned",
+            "misaligned",
+            "misaligned"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": false,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/wrong_product/test_498.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "critical",
+          "expected_issue_types": [
+            "wrong_product"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "misaligned"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": false,
+          "hallucination_flag": false
+        }
+      ]
+    },
+    "few_shot": {
+      "strategy": "few_shot",
+      "total_ground_truth_images": 15,
+      "outputs_found": 12,
+      "json_parse_rate": 80.0,
+      "issue_detection_rate": 40.0,
+      "false_positive_rate": 20.0,
+      "severity_accuracy": 46.67,
+      "status_accuracy": 26.67,
+      "hallucination_rate": 33.33,
+      "details": [
+        {
+          "image_path": "data/evaluation_prompting/ambiguous/test_132.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "ok",
+          "expected_issue_types": [
+            "other"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false,
+          "severity_valid": false,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/ambiguous/test_171 copy.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "ok",
+          "expected_issue_types": [
+            "other"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false,
+          "severity_valid": false,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/ambiguous/test_171.jpg",
+          "found_output": false,
+          "expected_issue_types": [
+            "other"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy 2.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "critical",
+          "expected_issue_types": [
+            "misaligned"
+          ],
+          "predicted_issue_types": [
+            "other",
+            "empty_shelf",
+            "empty_shelf",
+            "other",
+            "empty_shelf",
+            "empty_shelf",
+            "misaligned",
+            "other"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy.jpg",
+          "found_output": false,
+          "expected_issue_types": [
+            "misaligned"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/dirty_misaligned/test_137.jpg",
+          "found_output": false,
+          "expected_issue_types": [
+            "misaligned"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/empty_shelf/test_280.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "critical",
+          "expected_issue_types": [
+            "empty_shelf"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "other",
+            "empty_shelf",
+            "empty_shelf"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/empty_shelf/test_303.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "warning",
+          "expected_issue_types": [
+            "empty_shelf"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/empty_shelf/test_39.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "warning",
+          "expected_issue_types": [
+            "empty_shelf"
+          ],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf"
+          ],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/normal/test_29.jpg",
+          "found_output": true,
+          "expected_status": "ok",
+          "predicted_status": "warning",
+          "expected_issue_types": [],
+          "predicted_issue_types": [
+            "empty_shelf",
+            "misaligned"
+          ],
+          "issue_detection_correct": false,
+          "severity_valid": true,
+          "hallucination_flag": false
+        },
+        {
+          "image_path": "data/evaluation_prompting/normal/test_46.jpg",
+          "found_output": true,
+          "expected_status": "ok",
+          "predicted_status": "ok",
+          "expected_issue_types": [],
+          "predicted_issue_types": [],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": true
+        },
+        {
+          "image_path": "data/evaluation_prompting/normal/test_51.jpg",
+          "found_output": true,
+          "expected_status": "ok",
+          "predicted_status": "ok",
+          "expected_issue_types": [],
+          "predicted_issue_types": [],
+          "issue_detection_correct": true,
+          "severity_valid": true,
+          "hallucination_flag": true
+        },
+        {
+          "image_path": "data/evaluation_prompting/wrong_product/test_127.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "ok",
+          "expected_issue_types": [
+            "wrong_product"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false,
+          "severity_valid": false,
+          "hallucination_flag": true
+        },
+        {
+          "image_path": "data/evaluation_prompting/wrong_product/test_209.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "ok",
+          "expected_issue_types": [
+            "wrong_product"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false,
+          "severity_valid": false,
+          "hallucination_flag": true
+        },
+        {
+          "image_path": "data/evaluation_prompting/wrong_product/test_498.jpg",
+          "found_output": true,
+          "expected_status": "warning",
+          "predicted_status": "ok",
+          "expected_issue_types": [
+            "wrong_product"
+          ],
+          "predicted_issue_types": [],
+          "issue_detection_correct": false,
+          "severity_valid": false,
+          "hallucination_flag": true
+        }
+      ]
+    }
+  },
+  "summary_table": [
+    {
+      "strategy": "zero_shot",
+      "outputs_found": 12,
+      "json_parse_rate": 80.0,
+      "issue_detection_rate": 40.0,
+      "false_positive_rate": 73.33,
+      "severity_accuracy": 60.0,
+      "status_accuracy": 33.33,
+      "hallucination_rate": 0.0
+    },
+    {
+      "strategy": "cot_visual",
+      "outputs_found": 12,
+      "json_parse_rate": 80.0,
+      "issue_detection_rate": 33.33,
+      "false_positive_rate": 66.67,
+      "severity_accuracy": 53.33,
+      "status_accuracy": 6.67,
+      "hallucination_rate": 0.0
+    },
+    {
+      "strategy": "few_shot",
+      "outputs_found": 12,
+      "json_parse_rate": 80.0,
+      "issue_detection_rate": 40.0,
+      "false_positive_rate": 20.0,
+      "severity_accuracy": 46.67,
+      "status_accuracy": 26.67,
+      "hallucination_rate": 33.33
+    }
+  ]
+}

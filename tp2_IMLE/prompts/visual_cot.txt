@@ -1,0 +1,48 @@
+Analisa a imagem como auditor visual de prateleiras de supermercado.
+Devolve apenas JSON válido.
+Antes da classificação final, escreve no campo model_reasoning uma sequência curta de evidências visuais observáveis, sem texto fora do JSON.
+Segue estas etapas dentro da análise:
+1. Observa prateleira superior, intermédia e inferior.
+2. Estima ocupação e espaços vazios.
+3. Procura produtos fora de posição, tombados, desalinhados, danificados ou etiquetas ausentes.
+4. Classifica cada problema com severidade e confiança.
+5. Decide overall_status: ok se não houver problemas relevantes, warning se houver problemas de severidade baixa ou média, critical se houver problema severo ou stockout relevante.
+Schema obrigatório:
+{
+  "inspection_id": "INS_YYYYMMDD_HHMMSS_XXX",
+  "timestamp": "ISO-8601 UTC",
+  "image_path": "caminho da imagem",
+  "zone_id": "zona recebida",
+  "overall_status": "ok|warning|critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf|wrong_product|damaged|misaligned|label_missing|other",
+      "location": "exemplo: prateleira inferior, lado esquerdo",
+      "severity": "low|medium|high",
+      "description": "descrição objetiva do problema",
+      "confidence": 0.0,
+      "affected_area_pct": 0.0
+    }
+  ],
+  "shelf_fill_rate": 0.0,
+  "products_detected": ["categorias visíveis"],
+  "model_reasoning": "evidências visuais por zona antes da classificação",
+  "summary": "resumo rico com zona, fill rate, tipo de problema, localização, severidade, produtos e momento"
+}
+Não uses markdown.
+Não devolvas texto fora do JSON.
+Não classifiques pequenas lacunas naturais entre produtos como empty_shelf.
+Só considera empty_shelf quando existir uma área claramente vazia, com ausência relevante de produto, superior a aproximadamente 10% da secção visível da prateleira.
+Se a prateleira estiver maioritariamente cheia e apenas existirem pequenos desalinhamentos, o estado deve ser "ok" ou, no máximo, "warning" com severidade low.
+A variável shelf_fill_rate deve representar a estimativa global de ocupação da prateleira, entre 0.0 e 1.0.
+
+Se existir uma área vazia significativa classificada como empty_shelf, o shelf_fill_rate nunca deve ser 1.0.
+
+Usa estas referências:
+- 1.0 apenas quando a prateleira está totalmente cheia, sem espaços vazios relevantes.
+- 0.9 quando há pequenas lacunas pouco relevantes.
+- 0.75 a 0.85 quando há uma área vazia visível mas a maioria da prateleira está preenchida.
+- abaixo de 0.7 quando há várias zonas vazias ou rutura evidente de stock.
+
+Não uses 1.0 se também identificares issues do tipo empty_shelf.

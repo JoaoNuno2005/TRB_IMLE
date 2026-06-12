@@ -1,0 +1,52 @@
+{
+  "inspection_id": "INS_20260612_195819_001",
+  "timestamp": "2026-06-12T19:58:19Z",
+  "image_path": "data/evaluation_prompting/wrong_product/test_127.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "misaligned",
+      "location": "Prateleira superior, lado esquerdo, produtos de embalagem rosa",
+      "severity": "low",
+      "description": "Alguns pacotes de pensos higiénicos de embalagem rosa estão desalinhados e empilhados de forma irregular.",
+      "confidence": 0.85,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "misaligned",
+      "location": "Segunda prateleira de cima, lado esquerdo, produtos de embalagem azul",
+      "severity": "medium",
+      "description": "Os pacotes de pensos higiénicos de embalagem azul estão significativamente desorganizados e desalinhados, criando uma aparência desarrumada.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.12
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "misaligned",
+      "location": "Terceira prateleira de cima, lado esquerdo, produtos de embalagem rosa",
+      "severity": "low",
+      "description": "Alguns pacotes de pensos higiénicos de embalagem rosa estão ligeiramente desalinhados e não estão perfeitamente alinhados com os restantes.",
+      "confidence": 0.8,
+      "affected_area_pct": 0.04
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "misaligned",
+      "location": "Prateleira inferior, lado esquerdo, produtos de embalagem rosa",
+      "severity": "low",
+      "description": "Alguns pacotes de pensos higiénicos de embalagem rosa na prateleira inferior estão ligeiramente desalinhados.",
+      "confidence": 0.75,
+      "affected_area_pct": 0.03
+    }
+  ],
+  "shelf_fill_rate": 0.88,
+  "products_detected": [
+    "pensos higiénicos",
+    "toalhitas de higiene"
+  ],
+  "model_reasoning": "A imagem mostra uma prateleira de retalho predominantemente abastecida com pensos higiénicos de várias marcas e tipos, incluindo algumas toalhitas de higiene penduradas. A maioria dos produtos está presente, indicando um bom nível de stock. No entanto, foram observadas múltiplas instâncias de desalinhamento e desorganização dos produtos, especialmente nos pacotes de pensos higiénicos de cor rosa e azul em várias prateleiras. Não foram detetadas prateleiras completamente vazias, produtos danificados ou etiquetas em falta de forma evidente.",
+  "summary": "Inspeção de prateleira de retalho de produtos de higiene feminina. A prateleira apresenta um bom nível de stock, com uma taxa de preenchimento de 88%, composta principalmente por pensos higiénicos e algumas toalhitas de higiene. O estado geral é classificado como 'warning' devido à desorganização e desalinhamento frequente dos produtos em várias secções, o que pode impactar a apresentação visual e a experiência de compra. Recomenda-se a reorganização e alinhamento dos produtos para otimizar a exposição."
+}

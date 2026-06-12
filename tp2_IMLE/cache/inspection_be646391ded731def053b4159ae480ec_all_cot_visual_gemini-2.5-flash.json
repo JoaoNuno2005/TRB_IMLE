@@ -1,0 +1,37 @@
+{
+  "inspection_id": "INS_20260612_201233_001",
+  "timestamp": "2026-06-12T20:12:33Z",
+  "image_path": "data/evaluation_prompting/empty_shelf/test_303.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, quarta de cima para baixo, lado direito",
+      "severity": "high",
+      "description": "Área vazia significativa na prateleira, indicando rutura de stock para os produtos que deveriam estar ali.",
+      "confidence": 0.95,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "misaligned",
+      "location": "prateleira inferior, centro e direita",
+      "severity": "low",
+      "description": "Alguns frascos de creamer estão ligeiramente desalinhados.",
+      "confidence": 0.8,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 0.8,
+  "products_detected": [
+    "café moído",
+    "café em grão",
+    "cápsulas de café",
+    "cremes para café",
+    "xaropes para café"
+  ],
+  "model_reasoning": "Prateleira superior: Produtos empilhados, sem vazios relevantes. Prateleiras intermédias: As três primeiras estão bem preenchidas. A quarta prateleira intermédia apresenta uma secção vazia significativa no lado direito. Prateleira inferior: Maioritariamente preenchida, com alguns produtos ligeiramente desalinhados.",
+  "summary": "Inspeção realizada em 2026-06-12T20:12:33Z na zona 'all'. A prateleira apresenta um fill rate estimado de 80%. O problema mais relevante é uma área vazia significativa (20% da secção) na quarta prateleira intermédia, lado direito, classificada como 'empty_shelf' com severidade alta. Existem também alguns produtos desalinhados na prateleira inferior. Os produtos detetados incluem café (moído, grão, cápsulas), cremes e xaropes para café. O estado geral é crítico devido à rutura de stock observada."
+}

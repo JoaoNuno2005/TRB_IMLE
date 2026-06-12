@@ -1,0 +1,37 @@
+{
+  "inspection_id": "INS_20260612_201258_001",
+  "timestamp": "2026-06-12T20:12:58Z",
+  "image_path": "data/evaluation_prompting/normal/test_29.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (4ª de cima para baixo), lado esquerdo",
+      "severity": "medium",
+      "description": "Espaço vazio significativo à direita do expositor 'Back here again?', indicando falta de stock de produtos como Phazyme.",
+      "confidence": 0.9,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (5ª de cima para baixo), centro-direito",
+      "severity": "medium",
+      "description": "Espaço vazio notável à direita dos produtos Ex-Lax, indicando falta de stock.",
+      "confidence": 0.9,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 0.88,
+  "products_detected": [
+    "Antacids",
+    "Gas Relief",
+    "Laxatives",
+    "Anti-nausea",
+    "Other Digestive Aids"
+  ],
+  "model_reasoning": "Prateleiras superior, intermédia e inferior maioritariamente preenchidas. Observam-se espaços vazios notáveis na 4ª prateleira (esquerda-centro) e na 5ª prateleira (centro-direita), indicando falta de stock em secções específicas.",
+  "summary": "Inspeção realizada em 2026-06-12T20:12:58Z na zona 'all' da imagem 'data/evaluation_prompting/normal/test_29.jpg'. O estado geral é 'warning' devido a problemas de 'empty_shelf' nas prateleiras intermédias. A taxa de ocupação estimada é de 88%. Foram detetados produtos das categorias Antacids, Gas Relief, Laxatives, Anti-nausea e Other Digestive Aids. Os problemas incluem um espaço vazio significativo na prateleira intermédia (4ª de cima para baixo, lado esquerdo) e outro na prateleira intermédia (5ª de cima para baixo, centro-direito), ambos com severidade média."
+}

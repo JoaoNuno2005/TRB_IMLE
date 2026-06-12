@@ -1,0 +1,46 @@
+{
+  "inspection_id": "EVAL_zero_shot_normal_test_51_2219fdfe",
+  "timestamp": "2026-06-12T19:58:06Z",
+  "image_path": "data/evaluation_prompting/normal/test_51.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "other",
+      "location": "Prateleira 2, secção central direita",
+      "severity": "low",
+      "description": "Um expositor pendurado com pequenos artigos coloridos está a obstruir parcialmente a visibilidade de algumas garrafas de refrigerante.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.02
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "Prateleira 3, secção central direita, atrás das caixas de Xtreme",
+      "severity": "medium",
+      "description": "Espaço vazio considerável na prateleira, indicando falta de stock ou stock baixo de produtos.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.15
+    }
+  ],
+  "shelf_fill_rate": 0.91,
+  "products_detected": [
+    "Lemon Lime Soda",
+    "Root Beer",
+    "Diet Cola",
+    "Strawberry Soda",
+    "Peach Soda",
+    "Pineapple Passion Soda",
+    "Ginger Ale",
+    "Orange Soda",
+    "Grape Soda",
+    "Blue Soda",
+    "Red Soda",
+    "Green Soda",
+    "Xtreme"
+  ],
+  "model_reasoning": "A imagem mostra uma prateleira de retalho com várias bebidas. Foram identificadas garrafas de refrigerantes de diferentes sabores (limão-lima, root beer, morango, pêssego, ananás, ginger ale, diet cola) e caixas de refrigerantes (laranja, uva, azul, vermelho, verde, Xtreme). Observou-se um expositor pendurado que obstrui parcialmente alguns produtos na segunda prateleira. Na terceira prateleira, foi detetado um espaço vazio significativo atrás das caixas de Xtreme, indicando uma falha de stock. O preenchimento geral da prateleira é bom, mas os problemas identificados justificam um estado de aviso.",
+  "summary": "Inspeção de prateleira de retalho de bebidas, revelando um estado geral de 'warning'. A prateleira apresenta uma taxa de preenchimento de 91%, com uma boa variedade de refrigerantes em garrafas e caixas, incluindo sabores como limão-lima, root beer, morango, pêssego, ananás, ginger ale, diet cola, laranja, uva e a marca Xtreme. Foram identificadas duas anomalias: um expositor pendurado que obstrui ligeiramente produtos na segunda prateleira (severidade baixa) e um espaço vazio considerável na terceira prateleira, indicando falta de stock de produtos (severidade média). Estes problemas requerem atenção para otimizar a apresentação e disponibilidade dos produtos.",
+  "prompt_strategy": "zero_shot"
+}

@@ -1,0 +1,43 @@
+{
+  "inspection_id": "INS_20260612_172551_Z_S1",
+  "timestamp": "2026-06-12T17:25:51Z",
+  "image_path": "/Users/joaonunofonseca/Downloads/tp2_novo/data/images/uploads/20260612_182551_train_799.jpg",
+  "zone_id": "Z_S1",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "misaligned",
+      "location": "Prateleira superior, lado esquerdo",
+      "severity": "low",
+      "description": "Alguns produtos OMO estão ligeiramente desalinhados ou recuados na prateleira superior.",
+      "confidence": 0.85,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "misaligned",
+      "location": "Prateleiras intermédias, em várias secções",
+      "severity": "low",
+      "description": "Pequenos desalinhamentos e produtos não perfeitamente avançados são visíveis em várias prateleiras intermédias, tanto para produtos OMO quanto para a outra marca.",
+      "confidence": 0.8,
+      "affected_area_pct": 0.1
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "Prateleira inferior, lado esquerdo",
+      "severity": "medium",
+      "description": "Há um espaço vazio notável na prateleira inferior, lado esquerdo, onde deveriam estar produtos OMO.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.2
+    }
+  ],
+  "shelf_fill_rate": 0.9,
+  "products_detected": [
+    "Detergente OMO",
+    "Detergente (marca desconhecida, embalagem azul/verde/amarela)"
+  ],
+  "model_reasoning": "Prateleira superior: produtos OMO e outra marca ligeiramente desalinhados. Prateleiras intermédias: preenchimento bom, mas com desalinhamentos pontuais. Prateleira inferior: espaço vazio significativo no lado esquerdo.",
+  "summary": "Inspeção da zona Z_S1 em 2026-06-12T17:25:51Z. A taxa de ocupação da prateleira é de 90%. Foram detetados detergentes OMO e outra marca. O status geral é 'warning' devido a desalinhamentos de produtos em várias prateleiras (severidade baixa) e um espaço vazio na prateleira inferior esquerda (severidade média)."
+}

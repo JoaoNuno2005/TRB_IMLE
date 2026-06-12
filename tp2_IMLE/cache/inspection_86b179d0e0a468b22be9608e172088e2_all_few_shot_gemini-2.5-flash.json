@@ -1,0 +1,92 @@
+{
+  "inspection_id": "INS_20260612_202404_001",
+  "timestamp": "2026-06-12T20:24:04Z",
+  "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy 2.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "other",
+      "location": "Prateleira superior (acima dos produtos de bebida)",
+      "severity": "low",
+      "description": "Brinquedos de pelúcia (ursinhos e dálmata) estão armazenados na prateleira superior, não sendo produtos de bebida.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.0
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "Prateleira superior de garrafas (2L), lado direito",
+      "severity": "medium",
+      "description": "Espaço vazio notável onde deveriam estar garrafas de 2L de Coca-Cola.",
+      "confidence": 0.98,
+      "affected_area_pct": 0.1
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "Prateleira do meio de garrafas (0.5L/1L), lado direito",
+      "severity": "high",
+      "description": "Grande espaço vazio na prateleira do meio, indicando falta de stock de garrafas de refrigerante.",
+      "confidence": 0.98,
+      "affected_area_pct": 0.2
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "other",
+      "location": "Prateleira do meio de garrafas (0.5L/1L), centro",
+      "severity": "medium",
+      "description": "Expositor de palhinhas pendurado, obstruindo parcialmente os produtos de bebida.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.0
+    },
+    {
+      "issue_id": "ISS_005",
+      "type": "empty_shelf",
+      "location": "Prateleira inferior de garrafas (0.5L/1L), lado direito",
+      "severity": "low",
+      "description": "Pequeno espaço vazio na prateleira inferior de garrafas.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_006",
+      "type": "empty_shelf",
+      "location": "Prateleira inferior de latas (multi-packs), lado esquerdo",
+      "severity": "high",
+      "description": "Grande espaço vazio na prateleira inferior de multi-packs de latas, indicando falta de stock.",
+      "confidence": 0.98,
+      "affected_area_pct": 0.25
+    },
+    {
+      "issue_id": "ISS_007",
+      "type": "misaligned",
+      "location": "Prateleira inferior de latas (multi-packs), centro e direita",
+      "severity": "low",
+      "description": "Alguns multi-packs de latas não estão perfeitamente alinhados ou empurrados para a frente.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.0
+    },
+    {
+      "issue_id": "ISS_008",
+      "type": "other",
+      "location": "Prateleira inferior de latas (multi-packs), centro",
+      "severity": "low",
+      "description": "Pequeno expositor de copos de plástico na prateleira de multi-packs de latas.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.0
+    }
+  ],
+  "shelf_fill_rate": 0.84,
+  "products_detected": [
+    "Coca-Cola",
+    "Diet Coke",
+    "Sprite",
+    "Caffeine-Free Coca-Cola",
+    "Seagram's",
+    "Mello Yello"
+  ],
+  "model_reasoning": "A imagem mostra múltiplas prateleiras de bebidas com vários problemas. Há brinquedos de pelúcia na prateleira superior, que não são produtos de bebida. Existem espaços vazios significativos na prateleira superior de garrafas (2L), na prateleira do meio de garrafas (0.5L/1L) e na prateleira inferior de multi-packs de latas, indicando falta de stock. Além disso, há expositores de palhinhas e copos de plástico em prateleiras de bebidas, obstruindo os produtos. Alguns multi-packs de latas na prateleira inferior estão ligeiramente desalinhados. A taxa de preenchimento da prateleira é de aproximadamente 84%.",
+  "summary": "A prateleira de retalho apresenta um estado crítico devido a múltiplos problemas. Observam-se espaços vazios consideráveis em várias secções, nomeadamente na prateleira superior de garrafas de 2L, na prateleira do meio de garrafas mais pequenas e na prateleira inferior de multi-packs de latas, sugerindo falhas de reabastecimento. Além disso, a presença de artigos não relacionados com bebidas, como brinquedos de pelúcia na prateleira superior e expositores de palhinhas e copos de plástico nas prateleiras de produtos, contribui para a desorganização e obstrução. Alguns produtos na prateleira inferior também mostram desalinhamento. Estas questões indicam uma necessidade urgente de reabastecimento, organização e remoção de itens fora de categoria para otimizar a apresentação e disponibilidade dos produtos."
+}

@@ -1,0 +1,31 @@
+Vais analisar uma imagem de prateleira de retalho e devolver apenas JSON válido.
+Exemplos textuais de análises corretas:
+Exemplo 1: Uma prateleira normal com produtos alinhados, sem espaços vazios relevantes e etiquetas visíveis deve devolver overall_status ok, issues vazio, shelf_fill_rate próximo de 0.95, model_reasoning com evidência de alinhamento e ocupação.
+Exemplo 2: Uma prateleira inferior com 40% da área sem produto deve devolver issue type empty_shelf, location prateleira inferior, severity high se a área vazia for operacionalmente relevante, affected_area_pct 0.40 e overall_status critical.
+Exemplo 3: Um produto tombado na zona central com restantes produtos presentes deve devolver issue type damaged ou misaligned conforme a evidência, severity medium ou high se bloquear visibilidade, overall_status warning ou critical conforme impacto.
+Exemplo 4: Uma etiqueta ausente abaixo de produtos visíveis deve devolver issue type label_missing, location exata, severity low ou medium e confidence ajustada à visibilidade.
+Agora analisa a imagem recebida para a zona indicada.
+Schema obrigatório:
+{
+  "inspection_id": "INS_YYYYMMDD_HHMMSS_XXX",
+  "timestamp": "ISO-8601 UTC",
+  "image_path": "caminho da imagem",
+  "zone_id": "zona recebida",
+  "overall_status": "ok|warning|critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf|wrong_product|damaged|misaligned|label_missing|other",
+      "location": "localização observável",
+      "severity": "low|medium|high",
+      "description": "descrição objetiva",
+      "confidence": 0.0,
+      "affected_area_pct": 0.0
+    }
+  ],
+  "shelf_fill_rate": 0.0,
+  "products_detected": ["categorias visíveis"],
+  "model_reasoning": "evidências visuais observáveis que justificam a classificação",
+  "summary": "resumo semântico detalhado para recuperação futura"
+}
+Não inventes informação não visível.

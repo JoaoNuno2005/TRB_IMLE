@@ -1,0 +1,485 @@
+{
+  "num_common_images": 10,
+  "common_images": [
+    "data/evaluation_prompting/ambiguous/test_132.jpg",
+    "data/evaluation_prompting/empty_shelf/test_280.jpg",
+    "data/evaluation_prompting/empty_shelf/test_303.jpg",
+    "data/evaluation_prompting/empty_shelf/test_39.jpg",
+    "data/evaluation_prompting/normal/test_29.jpg",
+    "data/evaluation_prompting/normal/test_46.jpg",
+    "data/evaluation_prompting/normal/test_51.jpg",
+    "data/evaluation_prompting/wrong_product/test_127.jpg",
+    "data/evaluation_prompting/wrong_product/test_209.jpg",
+    "data/evaluation_prompting/wrong_product/test_498.jpg"
+  ],
+  "summary_table": [
+    {
+      "strategy": "zero_shot",
+      "images_evaluated": 10,
+      "json_parse_rate": 100.0,
+      "issue_detection_rate": 50.0,
+      "false_positive_rate": 90.0,
+      "severity_accuracy": 80.0,
+      "status_accuracy": 30.0,
+      "hallucination_rate": 0.0
+    },
+    {
+      "strategy": "cot_visual",
+      "images_evaluated": 10,
+      "json_parse_rate": 100.0,
+      "issue_detection_rate": 40.0,
+      "false_positive_rate": 90.0,
+      "severity_accuracy": 70.0,
+      "status_accuracy": 10.0,
+      "hallucination_rate": 0.0
+    },
+    {
+      "strategy": "few_shot",
+      "images_evaluated": 10,
+      "json_parse_rate": 100.0,
+      "issue_detection_rate": 50.0,
+      "false_positive_rate": 20.0,
+      "severity_accuracy": 60.0,
+      "status_accuracy": 40.0,
+      "hallucination_rate": 50.0
+    }
+  ],
+  "details": {
+    "zero_shot": [
+      {
+        "image_path": "data/evaluation_prompting/ambiguous/test_132.jpg",
+        "expected_types": [
+          "other"
+        ],
+        "predicted_types": [
+          "misaligned",
+          "empty_shelf",
+          "empty_shelf",
+          "misaligned"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "ok",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/empty_shelf/test_280.jpg",
+        "expected_types": [
+          "empty_shelf"
+        ],
+        "predicted_types": [
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "misaligned"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "warning",
+        "issue_detection_correct": true,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/empty_shelf/test_303.jpg",
+        "expected_types": [
+          "empty_shelf"
+        ],
+        "predicted_types": [
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "misaligned"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "critical",
+        "issue_detection_correct": true,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/empty_shelf/test_39.jpg",
+        "expected_types": [
+          "empty_shelf"
+        ],
+        "predicted_types": [
+          "empty_shelf",
+          "empty_shelf"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "critical",
+        "issue_detection_correct": true,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/normal/test_29.jpg",
+        "expected_types": [],
+        "predicted_types": [
+          "other",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf"
+        ],
+        "expected_status": "ok",
+        "predicted_status": "warning",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/normal/test_46.jpg",
+        "expected_types": [],
+        "predicted_types": [
+          "empty_shelf",
+          "misaligned"
+        ],
+        "expected_status": "ok",
+        "predicted_status": "warning",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/normal/test_51.jpg",
+        "expected_types": [],
+        "predicted_types": [
+          "other",
+          "empty_shelf"
+        ],
+        "expected_status": "ok",
+        "predicted_status": "warning",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/wrong_product/test_127.jpg",
+        "expected_types": [
+          "wrong_product"
+        ],
+        "predicted_types": [
+          "misaligned",
+          "misaligned",
+          "misaligned",
+          "misaligned"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "warning",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/wrong_product/test_209.jpg",
+        "expected_types": [
+          "wrong_product"
+        ],
+        "predicted_types": [
+          "misaligned",
+          "wrong_product"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "warning",
+        "issue_detection_correct": true,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/wrong_product/test_498.jpg",
+        "expected_types": [
+          "wrong_product"
+        ],
+        "predicted_types": [
+          "empty_shelf",
+          "misaligned",
+          "empty_shelf",
+          "misaligned",
+          "empty_shelf",
+          "misaligned",
+          "wrong_product",
+          "empty_shelf",
+          "misaligned",
+          "empty_shelf",
+          "misaligned"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "critical",
+        "issue_detection_correct": true,
+        "hallucination_flag": false
+      }
+    ],
+    "cot_visual": [
+      {
+        "image_path": "data/evaluation_prompting/ambiguous/test_132.jpg",
+        "expected_types": [
+          "other"
+        ],
+        "predicted_types": [
+          "misaligned",
+          "misaligned",
+          "other"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "critical",
+        "issue_detection_correct": true,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/empty_shelf/test_280.jpg",
+        "expected_types": [
+          "empty_shelf"
+        ],
+        "predicted_types": [
+          "empty_shelf",
+          "empty_shelf",
+          "misaligned"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "critical",
+        "issue_detection_correct": true,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/empty_shelf/test_303.jpg",
+        "expected_types": [
+          "empty_shelf"
+        ],
+        "predicted_types": [
+          "empty_shelf",
+          "misaligned"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "critical",
+        "issue_detection_correct": true,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/empty_shelf/test_39.jpg",
+        "expected_types": [
+          "empty_shelf"
+        ],
+        "predicted_types": [
+          "empty_shelf",
+          "empty_shelf"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "critical",
+        "issue_detection_correct": true,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/normal/test_29.jpg",
+        "expected_types": [],
+        "predicted_types": [
+          "empty_shelf",
+          "empty_shelf"
+        ],
+        "expected_status": "ok",
+        "predicted_status": "warning",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/normal/test_46.jpg",
+        "expected_types": [],
+        "predicted_types": [
+          "empty_shelf",
+          "misaligned",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "misaligned"
+        ],
+        "expected_status": "ok",
+        "predicted_status": "warning",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/normal/test_51.jpg",
+        "expected_types": [],
+        "predicted_types": [
+          "empty_shelf",
+          "wrong_product"
+        ],
+        "expected_status": "ok",
+        "predicted_status": "warning",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/wrong_product/test_127.jpg",
+        "expected_types": [
+          "wrong_product"
+        ],
+        "predicted_types": [
+          "empty_shelf",
+          "empty_shelf"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "critical",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/wrong_product/test_209.jpg",
+        "expected_types": [
+          "wrong_product"
+        ],
+        "predicted_types": [
+          "misaligned",
+          "misaligned",
+          "misaligned"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "warning",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/wrong_product/test_498.jpg",
+        "expected_types": [
+          "wrong_product"
+        ],
+        "predicted_types": [
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "misaligned"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "critical",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      }
+    ],
+    "few_shot": [
+      {
+        "image_path": "data/evaluation_prompting/ambiguous/test_132.jpg",
+        "expected_types": [
+          "other"
+        ],
+        "predicted_types": [],
+        "expected_status": "warning",
+        "predicted_status": "ok",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/empty_shelf/test_280.jpg",
+        "expected_types": [
+          "empty_shelf"
+        ],
+        "predicted_types": [
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf",
+          "other",
+          "empty_shelf",
+          "empty_shelf"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "critical",
+        "issue_detection_correct": true,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/empty_shelf/test_303.jpg",
+        "expected_types": [
+          "empty_shelf"
+        ],
+        "predicted_types": [
+          "empty_shelf"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "warning",
+        "issue_detection_correct": true,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/empty_shelf/test_39.jpg",
+        "expected_types": [
+          "empty_shelf"
+        ],
+        "predicted_types": [
+          "empty_shelf",
+          "empty_shelf",
+          "empty_shelf"
+        ],
+        "expected_status": "warning",
+        "predicted_status": "warning",
+        "issue_detection_correct": true,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/normal/test_29.jpg",
+        "expected_types": [],
+        "predicted_types": [
+          "empty_shelf",
+          "misaligned"
+        ],
+        "expected_status": "ok",
+        "predicted_status": "warning",
+        "issue_detection_correct": false,
+        "hallucination_flag": false
+      },
+      {
+        "image_path": "data/evaluation_prompting/normal/test_46.jpg",
+        "expected_types": [],
+        "predicted_types": [],
+        "expected_status": "ok",
+        "predicted_status": "ok",
+        "issue_detection_correct": true,
+        "hallucination_flag": true
+      },
+      {
+        "image_path": "data/evaluation_prompting/normal/test_51.jpg",
+        "expected_types": [],
+        "predicted_types": [],
+        "expected_status": "ok",
+        "predicted_status": "ok",
+        "issue_detection_correct": true,
+        "hallucination_flag": true
+      },
+      {
+        "image_path": "data/evaluation_prompting/wrong_product/test_127.jpg",
+        "expected_types": [
+          "wrong_product"
+        ],
+        "predicted_types": [],
+        "expected_status": "warning",
+        "predicted_status": "ok",
+        "issue_detection_correct": false,
+        "hallucination_flag": true
+      },
+      {
+        "image_path": "data/evaluation_prompting/wrong_product/test_209.jpg",
+        "expected_types": [
+          "wrong_product"
+        ],
+        "predicted_types": [],
+        "expected_status": "warning",
+        "predicted_status": "ok",
+        "issue_detection_correct": false,
+        "hallucination_flag": true
+      },
+      {
+        "image_path": "data/evaluation_prompting/wrong_product/test_498.jpg",
+        "expected_types": [
+          "wrong_product"
+        ],
+        "predicted_types": [],
+        "expected_status": "warning",
+        "predicted_status": "ok",
+        "issue_detection_correct": false,
+        "hallucination_flag": true
+      }
+    ]
+  }
+}

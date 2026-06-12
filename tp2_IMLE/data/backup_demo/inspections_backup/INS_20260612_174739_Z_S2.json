@@ -1,0 +1,40 @@
+{
+  "inspection_id": "INS_20260612_174739_Z_S2",
+  "timestamp": "2026-06-12T17:47:39Z",
+  "image_path": "/Users/joaonunofonseca/Downloads/tp2_novo/data/images/uploads/20260612_184739_test_2607.jpg",
+  "zone_id": "Z_S2",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, secção central-esquerda",
+      "severity": "high",
+      "description": "Área vazia significativa na prateleira intermédia, indicando falta de stock de produtos de higiene pessoal (gel de banho/sabonete líquido).",
+      "confidence": 1.0,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 1.0,
+  "products_detected": [
+    "Clorox",
+    "Lysol",
+    "The Works",
+    "Comet",
+    "Drain Opener",
+    "Top Care body wash",
+    "Olay body wash",
+    "Softsoap body wash",
+    "St. Ives body wash",
+    "Tone body wash",
+    "Ivory body wash",
+    "Zest body wash",
+    "Dove bar soap",
+    "Dial bar soap",
+    "Lever bar soap",
+    "Olay bar soap",
+    "Ivory bar soap"
+  ],
+  "model_reasoning": "Prateleira superior: Produtos de higiene pessoal bem organizados e com boa ocupação. Prateleira intermédia: Presença de uma área vazia significativa na secção central-esquerda, indicando falta de stock. Prateleira inferior: Produtos de limpeza e sabonetes em barra com boa ocupação geral e alinhamento.",
+  "summary": "Inspeção da zona Z_S2 realizada em 2026-06-12T17:47:39Z. A taxa de ocupação da prateleira é de 93.75%. O estado geral é crítico devido a um problema de empty_shelf (falta de stock) de severidade alta na prateleira intermédia, secção central-esquerda, afetando aproximadamente 25% da área. Foram detetados produtos como Clorox, Lysol, The Works, Comet, Drain Opener, e várias marcas de sabonetes e géis de banho (Top Care, Olay, Softsoap, St. Ives, Tone, Ivory, Zest, Dove, Dial, Lever)."
+}

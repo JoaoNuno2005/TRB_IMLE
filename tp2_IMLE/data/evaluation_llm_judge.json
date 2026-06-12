@@ -1,0 +1,91 @@
+{
+  "judge_mode": "local_fallback",
+  "note": "Avaliação automática local usada como fallback por indisponibilidade da API Gemini. O script mantém a estrutura de LLM-as-Judge para efeitos de validação da pipeline.",
+  "latest_report": "data/reports/test_report.md",
+  "scores": {
+    "report_quality": {
+      "score_0_10": 10.0,
+      "sections_found": [
+        "sumário executivo",
+        "problemas por zona",
+        "regras disparadas",
+        "contexto histórico",
+        "recomendações",
+        "integração"
+      ],
+      "required_sections": [
+        "sumário executivo",
+        "problemas por zona",
+        "regras disparadas",
+        "contexto histórico",
+        "recomendações",
+        "integração"
+      ],
+      "has_recommendations": true,
+      "has_rules": true,
+      "has_history": true,
+      "has_zones": true
+    },
+    "rag_quality": {
+      "score_0_10": 10.0,
+      "recall_at_3": 100.0,
+      "faithfulness": 100.0,
+      "answer_relevance": 100.0
+    },
+    "rule_engine_quality": {
+      "score_0_10": 10.0,
+      "rule_parse_rate": 100.0,
+      "rule_correctness": 100.0,
+      "ambiguity_detection": 100.0
+    },
+    "prompting_quality": {
+      "score_0_10": 5.8,
+      "best_strategy": "zero_shot",
+      "all_strategy_scores": [
+        {
+          "strategy": "zero_shot",
+          "score_0_10": 5.8,
+          "raw": {
+            "strategy": "zero_shot",
+            "images_evaluated": 10,
+            "json_parse_rate": 100.0,
+            "issue_detection_rate": 50.0,
+            "false_positive_rate": 90.0,
+            "severity_accuracy": 80.0,
+            "status_accuracy": 30.0,
+            "hallucination_rate": 0.0
+          }
+        },
+        {
+          "strategy": "cot_visual",
+          "score_0_10": 4.9,
+          "raw": {
+            "strategy": "cot_visual",
+            "images_evaluated": 10,
+            "json_parse_rate": 100.0,
+            "issue_detection_rate": 40.0,
+            "false_positive_rate": 90.0,
+            "severity_accuracy": 70.0,
+            "status_accuracy": 10.0,
+            "hallucination_rate": 0.0
+          }
+        },
+        {
+          "strategy": "few_shot",
+          "score_0_10": 5.4,
+          "raw": {
+            "strategy": "few_shot",
+            "images_evaluated": 10,
+            "json_parse_rate": 100.0,
+            "issue_detection_rate": 50.0,
+            "false_positive_rate": 20.0,
+            "severity_accuracy": 60.0,
+            "status_accuracy": 40.0,
+            "hallucination_rate": 50.0
+          }
+        }
+      ]
+    },
+    "overall_score_0_10": 9.16
+  }
+}

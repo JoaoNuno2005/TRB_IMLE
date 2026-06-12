@@ -1,0 +1,112 @@
+{
+  "inspection_id": "EVAL_zero_shot_normal_test_29_381138d0",
+  "timestamp": "2026-06-12T19:57:34Z",
+  "image_path": "data/evaluation_prompting/normal/test_29.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "other",
+      "location": "Prateleira 4, lado esquerdo, sobre produtos Phazyme",
+      "severity": "medium",
+      "description": "Um display promocional grande está a obstruir parcialmente a visibilidade e o acesso aos produtos Phazyme na prateleira.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "Prateleira 4, lado direito, após produtos Gas-X",
+      "severity": "low",
+      "description": "Espaço vazio visível na prateleira após os produtos Gas-X.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.03
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "Prateleira 5, entre Dramamine e Ex-Lax",
+      "severity": "medium",
+      "description": "Espaço vazio considerável na prateleira entre os produtos Dramamine e Ex-Lax.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.04
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "empty_shelf",
+      "location": "Prateleira 5, entre Ex-Lax e Senokot",
+      "severity": "low",
+      "description": "Pequeno espaço vazio na prateleira entre os produtos Ex-Lax e Senokot.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.02
+    },
+    {
+      "issue_id": "ISS_005",
+      "type": "empty_shelf",
+      "location": "Prateleira 5, entre Phillips' e Dulcolax",
+      "severity": "medium",
+      "description": "Espaço vazio na prateleira entre os produtos Phillips' e Dulcolax.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.03
+    },
+    {
+      "issue_id": "ISS_006",
+      "type": "empty_shelf",
+      "location": "Prateleira 6, entre MiraLAX e Pedia-Lax",
+      "severity": "medium",
+      "description": "Espaço vazio na prateleira entre os produtos MiraLAX e Pedia-Lax.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.03
+    },
+    {
+      "issue_id": "ISS_007",
+      "type": "empty_shelf",
+      "location": "Prateleira 6, lado direito, após produtos Fleet",
+      "severity": "low",
+      "description": "Pequeno espaço vazio na extremidade direita da prateleira, após os produtos Fleet.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.02
+    },
+    {
+      "issue_id": "ISS_008",
+      "type": "empty_shelf",
+      "location": "Prateleira 7 (inferior), lado direito, abaixo dos produtos Fleet Enema",
+      "severity": "medium",
+      "description": "Espaço vazio considerável na prateleira inferior, na secção direita.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.05
+    }
+  ],
+  "shelf_fill_rate": 0.88,
+  "products_detected": [
+    "Zegerid",
+    "Tagamet",
+    "Pepcid AC",
+    "Zantac",
+    "Tums",
+    "Pepcid Complete",
+    "Rolaids",
+    "Gaviscon",
+    "Mylanta",
+    "Gas-X",
+    "Phazyme",
+    "Beano",
+    "Senokot",
+    "Dramamine",
+    "Ex-Lax",
+    "Phillips'",
+    "Dulcolax",
+    "DulcoEase",
+    "Colace",
+    "Kaopectate",
+    "MiraLAX",
+    "ClearLax",
+    "Pedia-Lax",
+    "Mineral Oil",
+    "Fleet"
+  ],
+  "model_reasoning": "A análise visual da imagem revela uma prateleira de retalho dedicada a produtos de saúde digestiva e antiácidos. Foram identificados múltiplos produtos de marcas conhecidas como Pepcid, Tums, Rolaids, Gas-X, Dramamine, MiraLAX e Fleet. A maioria das prateleiras está bem abastecida, mas foram observados vários espaços vazios de diferentes tamanhos, indicando a necessidade de reabastecimento. Um display promocional na prateleira 4 está a obstruir parcialmente alguns produtos. A presença de múltiplos sinais de 'Buy 2 Get 1 Free' sugere promoções ativas. A taxa de preenchimento da prateleira foi estimada com base na proporção de espaço ocupado por produtos versus espaço total disponível.",
+  "summary": "Inspeção de prateleira de retalho focada em produtos de saúde digestiva e antiácidos. A prateleira apresenta uma boa variedade de marcas como Pepcid, Tums, Rolaids, Gas-X, Dramamine, MiraLAX e Fleet. O estado geral é de 'warning' devido à presença de múltiplos espaços vazios em várias prateleiras, que requerem reabastecimento. Adicionalmente, um display promocional está a causar obstrução parcial de produtos na prateleira 4. A taxa de preenchimento da prateleira é de aproximadamente 88%, com a maioria dos produtos bem organizados, embora com algumas lacunas notáveis. As promoções 'Buy 2 Get 1 Free' são proeminentes em várias secções.",
+  "prompt_strategy": "zero_shot"
+}

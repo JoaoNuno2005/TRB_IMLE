@@ -1,0 +1,180 @@
+{
+  "num_records_indexed": 76,
+  "num_queries": 3,
+  "metrics": {
+    "recall_at_3": 100.0,
+    "faithfulness": 100.0,
+    "answer_relevance": 100.0
+  },
+  "details": [
+    {
+      "query": "Que inspeções tiveram problemas de prateleira vazia?",
+      "top3": [
+        {
+          "inspection_id": "INS_20260612_195640_001",
+          "image_path": "data/evaluation_prompting/empty_shelf/test_280.jpg",
+          "zone_id": "all",
+          "overall_status": "warning",
+          "shelf_fill_rate": 0.85,
+          "issue_types": [
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "misaligned"
+          ],
+          "score": 44
+        },
+        {
+          "inspection_id": "EVAL_zero_shot_empty_shelf_test_280_8b524f75",
+          "image_path": "data/evaluation_prompting/empty_shelf/test_280.jpg",
+          "zone_id": "all",
+          "overall_status": "warning",
+          "shelf_fill_rate": 0.85,
+          "issue_types": [
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "misaligned"
+          ],
+          "score": 44
+        },
+        {
+          "inspection_id": "INS_20260612_195734_001",
+          "image_path": "data/evaluation_prompting/normal/test_29.jpg",
+          "zone_id": "all",
+          "overall_status": "warning",
+          "shelf_fill_rate": 0.88,
+          "issue_types": [
+            "other",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf"
+          ],
+          "score": 39
+        }
+      ],
+      "recall_at_3_ok": true,
+      "faithfulness_ok": true,
+      "answer_relevance_ok": true
+    },
+    {
+      "query": "Que inspeções tiveram fill rate inferior a 80%?",
+      "top3": [
+        {
+          "inspection_id": "INS_20260612_201233_001",
+          "image_path": "data/evaluation_prompting/empty_shelf/test_303.jpg",
+          "zone_id": "all",
+          "overall_status": "critical",
+          "shelf_fill_rate": 0.8,
+          "issue_types": [
+            "empty_shelf",
+            "misaligned"
+          ],
+          "score": 13
+        },
+        {
+          "inspection_id": "EVAL_cot_visual_empty_shelf_test_303_662bdd9a",
+          "image_path": "data/evaluation_prompting/empty_shelf/test_303.jpg",
+          "zone_id": "all",
+          "overall_status": "critical",
+          "shelf_fill_rate": 0.8,
+          "issue_types": [
+            "empty_shelf",
+            "misaligned"
+          ],
+          "score": 13
+        },
+        {
+          "inspection_id": "INS_20260612_201149_001",
+          "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy.jpg",
+          "zone_id": "all",
+          "overall_status": "critical",
+          "shelf_fill_rate": 0.75,
+          "issue_types": [
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "misaligned",
+            "wrong_product",
+            "other"
+          ],
+          "score": 11
+        }
+      ],
+      "recall_at_3_ok": true,
+      "faithfulness_ok": true,
+      "answer_relevance_ok": true
+    },
+    {
+      "query": "Que inspeções tiveram produtos desalinhados ou planograma incorreto?",
+      "top3": [
+        {
+          "inspection_id": "INS_20260612_201149_001",
+          "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy.jpg",
+          "zone_id": "all",
+          "overall_status": "critical",
+          "shelf_fill_rate": 0.75,
+          "issue_types": [
+            "empty_shelf",
+            "empty_shelf",
+            "empty_shelf",
+            "misaligned",
+            "wrong_product",
+            "other"
+          ],
+          "score": 6
+        },
+        {
+          "inspection_id": "INS_20260612_195819_001",
+          "image_path": "data/evaluation_prompting/wrong_product/test_127.jpg",
+          "zone_id": "all",
+          "overall_status": "warning",
+          "shelf_fill_rate": 0.88,
+          "issue_types": [
+            "misaligned",
+            "misaligned",
+            "misaligned",
+            "misaligned"
+          ],
+          "score": 6
+        },
+        {
+          "inspection_id": "INS_20260612_201403_001",
+          "image_path": "data/evaluation_prompting/wrong_product/test_209.jpg",
+          "zone_id": "all",
+          "overall_status": "warning",
+          "shelf_fill_rate": 0.9,
+          "issue_types": [
+            "misaligned",
+            "misaligned",
+            "misaligned"
+          ],
+          "score": 6
+        }
+      ],
+      "recall_at_3_ok": true,
+      "faithfulness_ok": true,
+      "answer_relevance_ok": true
+    }
+  ],
+  "notes": [
+    "Avaliação local rápida da memória histórica com base nos JSON de inspeções guardados.",
+    "A métrica Recall@3 verifica se pelo menos um dos três registos mais relevantes contém o padrão esperado.",
+    "Faithfulness verifica se as respostas recuperadas têm referência explícita a inspection_id e image_path.",
+    "Esta avaliação não depende da API Gemini."
+  ]
+}

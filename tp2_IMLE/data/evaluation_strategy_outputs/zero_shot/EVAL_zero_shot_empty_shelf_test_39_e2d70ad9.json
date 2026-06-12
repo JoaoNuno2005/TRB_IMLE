@@ -1,0 +1,39 @@
+{
+  "inspection_id": "EVAL_zero_shot_empty_shelf_test_39_e2d70ad9",
+  "timestamp": "2026-06-12T19:57:20Z",
+  "image_path": "data/evaluation_prompting/empty_shelf/test_39.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "Quinta prateleira (de cima para baixo), secção esquerda (Red Bull)",
+      "severity": "medium",
+      "description": "Espaço vazio na prateleira onde deveriam estar caixas de Red Bull, indicando a necessidade de reabastecimento.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "Sexta prateleira (de cima para baixo), secção esquerda (Rockstar Energy)",
+      "severity": "high",
+      "description": "Grande espaço vazio na prateleira onde deveriam estar caixas de Rockstar Energy, indicando uma falha significativa de stock.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.1
+    }
+  ],
+  "shelf_fill_rate": 0.9,
+  "products_detected": [
+    "Monster Energy",
+    "Clear Sparkling Water",
+    "Red Bull",
+    "La Croix Sparkling Water",
+    "Rockstar Energy",
+    "Propel Water Beverage"
+  ],
+  "model_reasoning": "A imagem mostra uma prateleira de retalho com seis níveis, exibindo uma variedade de bebidas energéticas e águas com gás. Os quatro níveis superiores estão bem abastecidos com Monster Energy e Clear Sparkling Water. No quinto nível, a secção esquerda de Red Bull apresenta um espaço vazio notável. No sexto e último nível, a secção esquerda de Rockstar Energy tem um espaço vazio considerável. Os produtos restantes estão organizados e os preços são visíveis.",
+  "summary": "A prateleira de retalho está maioritariamente bem abastecida com uma gama de bebidas energéticas (Monster, Red Bull, Rockstar) e águas com gás (Clear, La Croix, Propel). No entanto, foram identificadas duas áreas vazias significativas na parte inferior esquerda da prateleira, especificamente nas secções de Red Bull e Rockstar Energy, o que sugere a necessidade de reabastecimento imediato para manter a disponibilidade do produto. O estado geral é de 'warning' devido a estas falhas de stock.",
+  "prompt_strategy": "zero_shot"
+}

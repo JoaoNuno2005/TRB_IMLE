@@ -1,0 +1,35 @@
+{
+  "inspection_id": "INS_20260612_181439_Z_S3",
+  "timestamp": "2026-06-12T18:14:39Z",
+  "image_path": "/Users/joaonunofonseca/Downloads/tp2_novo/data/images/uploads/20260612_191439_val_288.jpg",
+  "zone_id": "Z_S3",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, lado direito",
+      "severity": "high",
+      "description": "Área vazia significativa onde deveriam estar sabonetes em barra, indicando rutura de stock ou falta de reposição.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.25
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, lado direito",
+      "severity": "high",
+      "description": "Área vazia significativa onde deveriam estar sabonetes em barra, indicando rutura de stock ou falta de reposição.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.2
+    }
+  ],
+  "shelf_fill_rate": 0.78,
+  "products_detected": [
+    "body wash",
+    "bar soap",
+    "sponges"
+  ],
+  "model_reasoning": "Prateleira superior: Produtos de higiene pessoal (gel de banho, champô) bem organizados, com boa ocupação geral. Pequenas lacunas entre alguns produtos, mas sem áreas vazias significativas. Prateleira intermédia: Produtos de higiene pessoal (gel de banho, sabonetes líquidos) na parte esquerda e central, com boa ocupação. Na parte direita, há uma área vazia considerável onde deveriam estar sabonetes em barra, com apenas alguns produtos Dial e Olay presentes, e um espaço vazio notável. Prateleira inferior: Produtos de higiene pessoal (sabonetes em barra) na parte esquerda e central, com boa ocupação. Na parte direita, há uma área vazia considerável onde deveriam estar sabonetes em barra, com apenas alguns produtos Ivory, Lever e Coast presentes, e um espaço vazio notável.",
+  "summary": "Auditoria visual da zona Z_S3, realizada em 2026-06-12T18:14:39Z. O estado geral é crítico devido a duas áreas vazias significativas (empty_shelf) nas prateleiras intermédia e inferior, lado direito, afetando aproximadamente 25% e 20% respetivamente. A taxa de ocupação global da prateleira é de 0.78. Foram detetados produtos como gel de banho, sabonetes em barra e esponjas."
+}

@@ -1,0 +1,45 @@
+{
+  "inspection_id": "INS_20260612_171917_Z_S1",
+  "timestamp": "2026-06-12T17:19:17Z",
+  "image_path": "data/images/dirty_misaligned/train_6.jpg",
+  "zone_id": "Z_S1",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, centro e direita",
+      "severity": "medium",
+      "description": "Vários espaços vazios notáveis onde deveriam estar produtos, indicando falta de stock ou má reposição.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "misaligned",
+      "location": "prateleira intermédia, em várias secções",
+      "severity": "medium",
+      "description": "Muitos produtos pequenos (batons, pomadas) estão desalinhados, tombados ou misturados nas bandejas, dificultando a visualização e acesso.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.3
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "misaligned",
+      "location": "prateleira superior, lado esquerdo",
+      "severity": "low",
+      "description": "Alguns produtos pendurados estão ligeiramente desalinhados ou virados de lado.",
+      "confidence": 0.75,
+      "affected_area_pct": 0.05
+    }
+  ],
+  "shelf_fill_rate": 0.8,
+  "products_detected": [
+    "protetores labiais",
+    "medicamentos para constipações e gripes",
+    "analgésicos",
+    "produtos de cuidado da pele"
+  ],
+  "model_reasoning": "Prateleira superior: Produtos pendurados com etiquetas de preço, alguns ligeiramente desalinhados. Prateleira intermédia: Vários espaços vazios visíveis, especialmente no centro e à direita. Muitos produtos pequenos estão desalinhados, tombados ou misturados nas bandejas. Prateleira inferior: Caixas de medicamentos empilhadas e organizadas, mas algumas pilhas estão ligeiramente inclinadas.",
+  "summary": "Inspeção da zona Z_S1 em 12 de junho de 2026, às 17:19 UTC. O estado geral da prateleira é 'warning' com uma taxa de ocupação de 80.0%. Foram identificados problemas de severidade média, como espaços vazios e produtos desalinhados na prateleira intermédia, afetando protetores labiais e pequenos medicamentos. Há também um desalinhamento menor na prateleira superior."
+}

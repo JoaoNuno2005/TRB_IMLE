@@ -1,0 +1,54 @@
+{
+  "inspection_id": "INS_20260612_201056_001",
+  "timestamp": "2026-06-12T20:10:56Z",
+  "image_path": "data/evaluation_prompting/ambiguous/test_132.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "misaligned",
+      "location": "prateleira superior, lado direito",
+      "severity": "low",
+      "description": "Algumas caixas de Ohropax estão ligeiramente desalinhadas ou tombadas.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "misaligned",
+      "location": "prateleira intermédia, centro-esquerda",
+      "severity": "low",
+      "description": "Alguns produtos Altapharma (plasters) estão ligeiramente desalinhados.",
+      "confidence": 0.85,
+      "affected_area_pct": 0.03
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "other",
+      "location": "prateleira inferior",
+      "severity": "high",
+      "description": "A maior parte da prateleira inferior está pixelizada e ilegível, impedindo a avaliação visual de produtos, ocupação ou problemas. Esta área representa uma parte significativa da prateleira total.",
+      "confidence": 1.0,
+      "affected_area_pct": 0.4
+    }
+  ],
+  "shelf_fill_rate": 0.9,
+  "products_detected": [
+    "Scholl Fuss Balsam",
+    "Altapharma Steriler Wundverband",
+    "Hansaplast bandages",
+    "Abtei Wundheil Zinksalbe",
+    "Tetesept Narben Gel",
+    "Ohropax earplugs",
+    "Beline Fussbalsam",
+    "Altapharma Wund-Pflaster",
+    "SOS Wund- und Heilgel",
+    "Flint Med",
+    "Preventivo condoms",
+    "Durex condoms",
+    "Preventivo Mini-Vibrator"
+  ],
+  "model_reasoning": "Prateleira superior: Produtos maioritariamente alinhados, com algumas caixas de Ohropax ligeiramente desalinhadas. Pequena lacuna no canto superior direito. Prateleira intermédia: Produtos bem preenchidos, com alguns Altapharma plasters ligeiramente desalinhados. Pequena lacuna no canto direito. Prateleira inferior: Grande parte da prateleira inferior está pixelizada e ilegível, impedindo a avaliação visual de produtos, ocupação ou problemas.",
+  "summary": "Auditoria visual da imagem 'data/evaluation_prompting/ambiguous/test_132.jpg' na zona 'all' realizada em 2026-06-12T20:10:56Z. O estado geral é 'critical' devido à ilegibilidade de uma parte significativa da prateleira inferior. A taxa de ocupação estimada para as secções visíveis é de 0.9. Foram detetados pequenos desalinhamentos de produtos Ohropax na prateleira superior e Altapharma na prateleira intermédia, ambos com severidade baixa. A prateleira inferior apresenta um problema de ilegibilidade que impede a sua análise, classificado com severidade alta. Os produtos visíveis incluem artigos de cuidado para os pés, pensos, ligaduras, produtos para feridas, protetores auriculares e produtos de higiene íntima."
+}

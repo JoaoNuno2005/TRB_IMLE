@@ -1,0 +1,67 @@
+{
+  "inspection_id": "INS_20260612_194223_001",
+  "timestamp": "2026-06-12T19:42:23Z",
+  "image_path": "data/images/ambiguous/test_2921.jpg",
+  "zone_id": "Z_UNKNOWN",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "Prateleira superior, secção direita de Listerine",
+      "severity": "medium",
+      "description": "Espaço vazio significativo na secção de elixires bucais Listerine, indicando falta de stock.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "Terceira prateleira de cima para baixo, secção esquerda de Firefly",
+      "severity": "medium",
+      "description": "Área vazia na secção de escovas de dentes infantis Firefly, sugerindo necessidade de reabastecimento.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.07
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "Prateleira inferior, secção esquerda de Colgate",
+      "severity": "high",
+      "description": "Grande espaço vazio na secção de pastas de dentes Colgate para crianças, indicando rutura de stock.",
+      "confidence": 0.98,
+      "affected_area_pct": 0.1
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "empty_shelf",
+      "location": "Prateleira inferior, secção direita de OraCare",
+      "severity": "medium",
+      "description": "Espaço vazio na secção de elixires bucais OraCare, necessitando de reposição.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.08
+    }
+  ],
+  "shelf_fill_rate": 0.85,
+  "products_detected": [
+    "Escovas de dentes elétricas Oral-B",
+    "Escovas de dentes manuais Colgate",
+    "Escovas de dentes infantis Firefly",
+    "Elixires bucais Listerine",
+    "Elixires bucais Colgate Plax",
+    "Elixires bucais Corsodyl",
+    "Elixires bucais Ultra Dex",
+    "Elixires bucais CB12",
+    "Elixires bucais Peroxyl",
+    "Elixires bucais Fluorigard",
+    "Elixires bucais Sensodyne",
+    "Elixires bucais Aquafresh",
+    "Elixires bucais Oral-B",
+    "Elixires bucais Dentyl",
+    "Elixires bucais OraCare",
+    "Pastas de dentes Pronamel",
+    "Pastas de dentes Colgate (infantil)"
+  ],
+  "model_reasoning": "A imagem exibe uma prateleira de produtos de higiene oral com quatro níveis. A análise visual revelou várias áreas com falta de stock, nomeadamente na prateleira superior (Listerine), na terceira prateleira (Firefly) e na prateleira inferior (Colgate e OraCare). A maioria dos produtos restantes está organizada de forma razoável, mas a presença de múltiplos espaços vazios contribui para uma taxa de preenchimento de 85% e justifica o estado de 'warning'. Os produtos são claramente identificáveis pelas suas embalagens e marcas.",
+  "summary": "Análise da prateleira de higiene oral indica um estado de 'warning' devido a falhas de stock em várias secções. Foram identificados espaços vazios significativos nas áreas de elixires bucais Listerine e OraCare, escovas de dentes Firefly e pastas de dentes Colgate infantis. A taxa de preenchimento da prateleira é de 85%. A prateleira contém uma vasta gama de produtos de higiene oral, incluindo escovas de dentes elétricas e manuais, elixires bucais e pastas de dentes de marcas como Oral-B, Listerine, Colgate, Corsodyl, Ultra Dex, CB12, Peroxyl, Fluorigard, Sensodyne, Aquafresh, Dentyl, OraCare e Pronamel. É recomendada a reposição de stock nas áreas afetadas para melhorar a disponibilidade dos produtos."
+}

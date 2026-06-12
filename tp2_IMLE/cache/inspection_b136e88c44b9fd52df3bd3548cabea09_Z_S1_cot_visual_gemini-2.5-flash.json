@@ -1,0 +1,28 @@
+{
+  "inspection_id": "INS_20260612_181300_001",
+  "timestamp": "2026-06-12T18:13:00Z",
+  "image_path": "/Users/joaonunofonseca/Downloads/tp2_novo/data/images/uploads/20260612_191300_train_4242.jpg",
+  "zone_id": "Z_S1",
+  "overall_status": "ok",
+  "issues": [],
+  "shelf_fill_rate": 0.95,
+  "products_detected": [
+    "RC Cola",
+    "Canada Dry",
+    "Sunkist",
+    "Diet Sunkist",
+    "A&W Root Beer",
+    "7UP",
+    "Diet 7UP",
+    "Dr. Pepper",
+    "Diet Rite",
+    "Squirt",
+    "Sunkist Strawberry",
+    "Sunkist Grape",
+    "Diet A&W",
+    "Cherry 7UP",
+    "Dr. Pepper TEN"
+  ],
+  "model_reasoning": "Prateleira superior com garrafas de 2L bem preenchida, pequenos espaços entre produtos. Prateleira intermédia com garrafas de 2L igualmente bem preenchida, sem falhas visíveis. Prateleira inferior com packs de 12 unidades, quase totalmente preenchida, com boa organização geral.",
+  "summary": "Inspeção da zona Z_S1 em 2026-06-12T18:13:00Z. A prateleira apresenta um estado geral 'ok' com uma taxa de preenchimento estimada em 95%. Não foram identificados problemas relevantes como ruturas de stock ou produtos danificados. Os produtos visíveis incluem várias marcas de refrigerantes em garrafas de 2L e packs de 12 unidades, como RC Cola, Sunkist, 7UP e Dr. Pepper, entre outros."
+}

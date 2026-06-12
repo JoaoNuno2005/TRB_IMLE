@@ -1,0 +1,56 @@
+{
+  "inspection_id": "INS_20260612_171950_Z_S1",
+  "timestamp": "2026-06-12T17:19:50Z",
+  "image_path": "data/images/ambiguous/train_4.jpg",
+  "zone_id": "Z_S1",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, secção central, lado esquerdo",
+      "severity": "medium",
+      "description": "Grande espaço vazio na prateleira intermédia, indicando falta de stock para os produtos que deveriam estar ali.",
+      "confidence": 0.95,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "misaligned",
+      "location": "prateleiras do expositor de Pringles, lado direito",
+      "severity": "low",
+      "description": "Latas de Pringles desalinhadas e algumas empurradas para trás nas prateleiras do expositor lateral.",
+      "confidence": 0.8,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "other",
+      "location": "prateleira superior-intermédia, secção direita, pendurados",
+      "severity": "low",
+      "description": "Itens (panos/luvas) pendurados na frente da prateleira, potencialmente obstruindo a visão dos produtos ou sendo de uma categoria diferente.",
+      "confidence": 0.7,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "other",
+      "location": "prateleira inferior do expositor de Pringles, lado direito",
+      "severity": "low",
+      "description": "Uma caixa de Pringles vazia ou para reposição está colocada na prateleira inferior do expositor, contribuindo para desorganização.",
+      "confidence": 0.75,
+      "affected_area_pct": 0.5
+    }
+  ],
+  "shelf_fill_rate": 1.0,
+  "products_detected": [
+    "misturas para bebidas",
+    "refrigerantes",
+    "água com gás",
+    "snacks (Pringles)",
+    "azeitonas",
+    "acessórios de cozinha"
+  ],
+  "model_reasoning": "Prateleira superior e intermédia esquerdas bem preenchidas. Prateleira intermédia central com espaço vazio significativo. Prateleiras direitas de bebidas bem preenchidas. Expositor de Pringles com produtos desalinhados e uma caixa na prateleira inferior. Itens pendurados na prateleira superior-intermédia direita.",
+  "summary": "Inspeção da zona Z_S1 em 2026-06-12T17:19:50Z revela um status de 'warning'. A taxa de preenchimento da prateleira é de aproximadamente 90%. O problema mais relevante é um espaço vazio de severidade média na prateleira intermédia central. Adicionalmente, foram observados produtos desalinhados no expositor de Pringles, itens pendurados que obstruem a visão e uma caixa na prateleira inferior do expositor, todos classificados com severidade baixa. Os produtos visíveis incluem misturas para bebidas, refrigerantes, água com gás, snacks (Pringles), azeitonas e acessórios de cozinha."
+}

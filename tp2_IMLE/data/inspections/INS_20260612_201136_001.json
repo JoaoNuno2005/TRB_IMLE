@@ -1,0 +1,55 @@
+{
+  "inspection_id": "INS_20260612_201136_001",
+  "timestamp": "2026-06-12T20:11:36Z",
+  "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy 2.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (segunda de cima para baixo), lado direito",
+      "severity": "medium",
+      "description": "Espaço vazio significativo onde deveriam estar garrafas de refrigerante.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (terceira de cima para baixo), lado direito",
+      "severity": "medium",
+      "description": "Espaço vazio significativo onde deveriam estar garrafas de refrigerante.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "misaligned",
+      "location": "prateleira inferior, lado esquerdo",
+      "severity": "low",
+      "description": "Uma caixa de Coca-Cola está virada de lado.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.02
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "misaligned",
+      "location": "várias prateleiras",
+      "severity": "low",
+      "description": "Várias garrafas e caixas de refrigerante estão ligeiramente desalinhadas ou não estão perfeitamente frontadas.",
+      "confidence": 0.8,
+      "affected_area_pct": 0.05
+    }
+  ],
+  "shelf_fill_rate": 0.85,
+  "products_detected": [
+    "Coca-Cola",
+    "Diet Coke",
+    "Sprite",
+    "Seagram's",
+    "Mello Yello"
+  ],
+  "model_reasoning": "Prateleira superior: Garrafas de refrigerante bem preenchidas, com alguns produtos desalinhados. Prateleiras intermédias: Duas secções com espaços vazios notáveis e garrafas desalinhadas. Prateleira inferior: Caixas de latas de refrigerante bem preenchidas, com uma caixa virada de lado e alguns desalinhamentos.",
+  "summary": "Inspeção realizada em 2026-06-12T20:11:36Z na zona 'all'. O estado geral é 'warning' devido a dois espaços vazios significativos nas prateleiras intermédias, afetando aproximadamente 15% de cada secção. A taxa de ocupação da prateleira é estimada em 0.85. Foram detetados produtos como Coca-Cola, Diet Coke, Sprite, Seagram's e Mello Yello. Adicionalmente, foram observados desalinhamentos menores em várias prateleiras e uma caixa de Coca-Cola virada de lado na prateleira inferior."
+}

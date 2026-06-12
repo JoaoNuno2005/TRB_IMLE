@@ -1,0 +1,46 @@
+{
+  "inspection_id": "INS_20260612_201339_ALL",
+  "timestamp": "2026-06-12T20:13:39Z",
+  "image_path": "data/evaluation_prompting/normal/test_51.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, secção de caixas de refrigerante, lado direito do centro",
+      "severity": "medium",
+      "description": "Espaço vazio significativo na prateleira de caixas de refrigerante, indicando falta de stock para um SKU.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "wrong_product",
+      "location": "prateleira intermédia, centro",
+      "severity": "low",
+      "description": "Item não relacionado (brinquedos/doces) pendurado na secção de refrigerantes.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.01
+    }
+  ],
+  "shelf_fill_rate": 0.82,
+  "products_detected": [
+    "Lemon Lime Soda",
+    "Root Beer",
+    "Diet Cola",
+    "Strawberry Soda",
+    "Peach Soda",
+    "Pineapple Soda",
+    "Ginger Ale",
+    "Orange Soda",
+    "Grape Soda",
+    "Blue Soda",
+    "Red Soda",
+    "Green Soda",
+    "Diet Cola (caixas)",
+    "Root Beer (caixas)"
+  ],
+  "model_reasoning": "Prateleira superior: Garrafas de refrigerante bem preenchidas. Prateleira intermédia: Garrafas de refrigerante bem preenchidas, mas secção de caixas de refrigerante apresenta espaço vazio significativo no lado direito do centro. Item pendurado (brinquedos/doces) visível. Prateleira inferior: Caixas de refrigerante bem preenchidas.",
+  "summary": "Auditoria visual realizada em 2026-06-12T20:13:39Z na zona 'all'. O estado geral é 'warning' devido a um espaço vazio de stock de caixas de refrigerante na prateleira intermédia (severidade média) e um item fora de lugar (brinquedos/doces) na mesma prateleira (severidade baixa). A taxa de ocupação da prateleira é estimada em 82%, com a maioria dos produtos como refrigerantes em garrafas e caixas."
+}

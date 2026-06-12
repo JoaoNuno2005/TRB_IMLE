@@ -1,0 +1,60 @@
+{
+  "inspection_id": "EVAL_zero_shot_dirty_misaligned_test_137 copy 2_b841c9d7",
+  "timestamp": "2026-06-12T19:56:19Z",
+  "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy 2.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "other",
+      "location": "Prateleira superior, acima dos produtos",
+      "severity": "low",
+      "description": "Brinquedos de peluche (cão dálmata e urso) estão colocados na prateleira superior, que não faz parte da exposição de bebidas.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "wrong_product",
+      "location": "Prateleira 2, centro",
+      "severity": "medium",
+      "description": "Um expositor de palhinhas está pendurado na prateleira, obstruindo parcialmente a visibilidade e o acesso a algumas garrafas de refrigerante.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.03
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "misaligned",
+      "location": "Várias prateleiras (1, 2, 3, 4)",
+      "severity": "medium",
+      "description": "Muitas garrafas e algumas embalagens de latas estão desalinhadas, criando uma apresentação desorganizada.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.2
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "empty_shelf",
+      "location": "Várias prateleiras, especialmente prateleiras 1, 2 e 3 (lado direito) e prateleira 4 (lado esquerdo)",
+      "severity": "medium",
+      "description": "Existem várias lacunas e espaços vazios nas prateleiras, indicando a necessidade de reabastecimento de produtos como Coca-Cola Classic e Diet Coke em garrafas, e Pepsi em latas.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.1
+    }
+  ],
+  "shelf_fill_rate": 0.85,
+  "products_detected": [
+    "Coca-Cola Classic",
+    "Diet Coke",
+    "Coke Zero Sugar",
+    "Sprite",
+    "Coca-Cola Caffeine Free",
+    "Pepsi",
+    "Seagram's",
+    "Mello Yello",
+    "Palhinhas"
+  ],
+  "model_reasoning": "A análise visual da imagem revela que a prateleira está maioritariamente abastecida com uma variedade de bebidas da marca Coca-Cola, incluindo garrafas e latas de Coca-Cola Classic, Diet Coke, Coke Zero Sugar, Sprite e Coca-Cola Caffeine Free. Há também produtos Pepsi, Seagram's e Mello Yello visíveis. No entanto, foram identificadas várias anomalias: a presença de brinquedos de peluche na prateleira superior, um expositor de palhinhas a obstruir produtos na segunda prateleira, desalinhamento generalizado de garrafas e embalagens de latas, e algumas áreas com falta de stock, resultando em espaços vazios. Estes fatores contribuem para uma apresentação menos otimizada da prateleira.",
+  "summary": "A prateleira de retalho, dedicada a bebidas refrigerantes, apresenta um bom nível de stock de produtos Coca-Cola (Classic, Diet, Zero Sugar, Sprite, Caffeine Free), com algumas opções de Pepsi, Seagram's e Mello Yello. Contudo, a organização e a conformidade da exposição são comprometidas por vários fatores. Observa-se a presença de artigos não relacionados (brinquedos de peluche) na prateleira superior e um expositor de palhinhas que bloqueia parcialmente os produtos na segunda prateleira. Adicionalmente, há um desalinhamento notório de garrafas e embalagens de latas em várias secções, e algumas áreas com stock reduzido ou vazio, indicando a necessidade de reabastecimento e arrumação. O estado geral da prateleira é classificado como 'warning' devido a estas irregularidades que afetam a estética e a disponibilidade dos produtos.",
+  "prompt_strategy": "zero_shot"
+}

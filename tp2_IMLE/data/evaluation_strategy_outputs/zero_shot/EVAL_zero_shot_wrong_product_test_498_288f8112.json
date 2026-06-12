@@ -1,0 +1,119 @@
+{
+  "inspection_id": "EVAL_zero_shot_wrong_product_test_498_288f8112",
+  "timestamp": "2026-06-12T19:58:52Z",
+  "image_path": "data/evaluation_prompting/wrong_product/test_498.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "Prateleira superior, secção central esquerda",
+      "severity": "medium",
+      "description": "Espaços vazios visíveis na prateleira superior, indicando falta de stock ou má reposição.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.1
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "misaligned",
+      "location": "Prateleira superior, geral",
+      "severity": "low",
+      "description": "Vários produtos na prateleira superior estão desalinhados ou não estão encostados à frente da prateleira.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "Segunda prateleira de cima para baixo, secção central esquerda",
+      "severity": "medium",
+      "description": "Espaços vazios visíveis na segunda prateleira, indicando falta de stock ou má reposição.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.08
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "misaligned",
+      "location": "Segunda prateleira de cima para baixo, geral",
+      "severity": "low",
+      "description": "Vários produtos na segunda prateleira estão desalinhados ou não estão encostados à frente da prateleira.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.12
+    },
+    {
+      "issue_id": "ISS_005",
+      "type": "empty_shelf",
+      "location": "Terceira prateleira de cima para baixo, secção central direita",
+      "severity": "medium",
+      "description": "Espaços vazios visíveis na terceira prateleira, indicando falta de stock ou má reposição.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.07
+    },
+    {
+      "issue_id": "ISS_006",
+      "type": "misaligned",
+      "location": "Terceira prateleira de cima para baixo, geral",
+      "severity": "low",
+      "description": "Vários produtos na terceira prateleira estão desalinhados ou não estão encostados à frente da prateleira.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.1
+    },
+    {
+      "issue_id": "ISS_007",
+      "type": "wrong_product",
+      "location": "Quarta prateleira de cima para baixo, canto direito",
+      "severity": "high",
+      "description": "Acessórios de cabelo da marca Carmen estão expostos numa secção de champôs e amaciadores, o que é um produto incorreto para esta categoria.",
+      "confidence": 0.99,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_008",
+      "type": "empty_shelf",
+      "location": "Quarta prateleira de cima para baixo, secção central direita",
+      "severity": "medium",
+      "description": "Espaços vazios visíveis na quarta prateleira, indicando falta de stock ou má reposição.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.06
+    },
+    {
+      "issue_id": "ISS_009",
+      "type": "misaligned",
+      "location": "Quarta prateleira de cima para baixo, geral",
+      "severity": "low",
+      "description": "Vários produtos na quarta prateleira estão desalinhados ou não estão encostados à frente da prateleira.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.08
+    },
+    {
+      "issue_id": "ISS_010",
+      "type": "empty_shelf",
+      "location": "Prateleira inferior, secção central",
+      "severity": "high",
+      "description": "Grandes espaços vazios na prateleira inferior, indicando uma falha significativa de stock ou reposição.",
+      "confidence": 0.98,
+      "affected_area_pct": 0.2
+    },
+    {
+      "issue_id": "ISS_011",
+      "type": "misaligned",
+      "location": "Prateleira inferior, geral",
+      "severity": "low",
+      "description": "Vários produtos na prateleira inferior estão desalinhados ou não estão encostados à frente da prateleira.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.15
+    }
+  ],
+  "shelf_fill_rate": 0.7,
+  "products_detected": [
+    "Dove",
+    "L'Oréal Elvive",
+    "Herbal Essences",
+    "Pantene",
+    "Carmen (acessórios de cabelo)"
+  ],
+  "model_reasoning": "A análise visual da imagem revelou a presença de cinco prateleiras de produtos para cabelo. Foram identificadas várias marcas como Dove, L'Oréal Elvive, Herbal Essences e Pantene. A detecção de espaços vazios em todas as prateleiras, especialmente na inferior, e o desalinhamento generalizado dos produtos foram observados. Adicionalmente, a presença de acessórios de cabelo da marca Carmen na quarta prateleira, que é dedicada a produtos de cuidado capilar líquido, foi classificada como um produto incorreto. A taxa de preenchimento da prateleira foi estimada com base na proporção de espaço ocupado versus espaço disponível.",
+  "summary": "A prateleira de retalho de produtos para cabelo apresenta um estado geral crítico devido a múltiplas falhas. Existem lacunas significativas de stock em todas as prateleiras, com a prateleira inferior a mostrar os maiores espaços vazios. A organização dos produtos é deficiente, com muitos itens desalinhados e não puxados para a frente. Uma questão crítica é a presença de acessórios de cabelo da marca Carmen numa secção destinada a champôs e amaciadores, indicando uma colocação de produto incorreta. As marcas predominantes incluem Dove, L'Oréal Elvive, Herbal Essences e Pantene. A taxa de preenchimento da prateleira é de aproximadamente 70%, refletindo a necessidade de reposição e reorganização.",
+  "prompt_strategy": "zero_shot"
+}

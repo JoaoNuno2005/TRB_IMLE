@@ -1,0 +1,25 @@
+{
+  "inspection_id": "INS_20260612_202344_001",
+  "timestamp": "2026-06-12T20:23:44Z",
+  "image_path": "data/evaluation_prompting/ambiguous/test_132.jpg",
+  "zone_id": "all",
+  "overall_status": "ok",
+  "issues": [],
+  "shelf_fill_rate": 0.95,
+  "products_detected": [
+    "Scholl",
+    "Altapharma",
+    "Hansaplast",
+    "Abtei",
+    "tetesept",
+    "Ohropax",
+    "Beline",
+    "S-O-S",
+    "Flint Med",
+    "Preventivo",
+    "Rossmann",
+    "Durex"
+  ],
+  "model_reasoning": "As prateleiras visíveis (superiores) apresentam produtos bem alinhados e com boa ocupação, sem espaços vazios relevantes ou produtos danificados. As etiquetas de preço estão visíveis e correspondem aos produtos. Uma parte significativa da imagem inferior está pixelizada/obscurecida, impossibilitando a análise completa dessa área. A avaliação é baseada apenas nas áreas discerníveis.",
+  "summary": "A imagem mostra uma secção de prateleiras de retalho com produtos de saúde e higiene pessoal. As três prateleiras superiores estão bem organizadas, com os produtos alinhados e um alto nível de preenchimento. Não foram detetadas anomalias como produtos em falta, desalinhados ou danificados nas áreas visíveis. No entanto, a parte inferior da imagem está fortemente pixelizada e não pode ser analisada, limitando a avaliação global da prateleira."
+}

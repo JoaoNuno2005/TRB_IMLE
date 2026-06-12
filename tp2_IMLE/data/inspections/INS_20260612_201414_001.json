@@ -1,0 +1,81 @@
+{
+  "inspection_id": "INS_20260612_201414_001",
+  "timestamp": "2026-06-12T20:14:14Z",
+  "image_path": "data/evaluation_prompting/wrong_product/test_498.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (2ª de cima para baixo), lado direito",
+      "severity": "medium",
+      "description": "Espaço vazio significativo onde deveriam estar produtos Dove, indicando rutura de stock.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (4ª de cima para baixo), lado direito",
+      "severity": "medium",
+      "description": "Espaço vazio significativo após os produtos L'Oreal Elvive.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.1
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (5ª de cima para baixo), lado esquerdo",
+      "severity": "high",
+      "description": "Área vazia considerável antes dos produtos L'Oreal Elvive.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.2
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (5ª de cima para baixo), lado direito",
+      "severity": "medium",
+      "description": "Espaço vazio notável após os produtos L'Oreal Elvive e antes dos Pantene.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.1
+    },
+    {
+      "issue_id": "ISS_005",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, lado esquerdo",
+      "severity": "high",
+      "description": "Grande área vazia na secção esquerda da prateleira inferior.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.25
+    },
+    {
+      "issue_id": "ISS_006",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, centro",
+      "severity": "medium",
+      "description": "Espaço vazio significativo entre os produtos L'Oreal Elvive e Pantene na prateleira inferior.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_007",
+      "type": "misaligned",
+      "location": "várias prateleiras",
+      "severity": "low",
+      "description": "Vários produtos em diferentes prateleiras estão ligeiramente desalinhados, necessitando de organização.",
+      "confidence": 0.85,
+      "affected_area_pct": 0.3
+    }
+  ],
+  "shelf_fill_rate": 0.7,
+  "products_detected": [
+    "Dove",
+    "L'Oreal Elvive",
+    "Herbal Essences",
+    "Pantene"
+  ],
+  "model_reasoning": "Prateleira superior: Pequenas lacunas e alguns produtos ligeiramente desalinhados. Prateleira intermédia (2ª de cima): Espaço vazio significativo no lado direito. Prateleira intermédia (3ª de cima): Geralmente bem preenchida, com alguns desalinhamentos menores. Prateleira intermédia (4ª de cima): Espaço vazio notável no lado direito. Prateleira intermédia (5ª de cima): Áreas vazias significativas nos lados esquerdo e direito. Prateleira inferior: Grandes áreas vazias no lado esquerdo e no centro. Desalinhamento geral de produtos em várias prateleiras.",
+  "summary": "Inspeção realizada em 2026-06-12T20:14:14Z na zona 'all'. O estado geral é 'critical' devido a múltiplas e significativas ruturas de stock (empty_shelf) em várias prateleiras, com severidade média a alta. A taxa de ocupação da prateleira é estimada em 0.7. Foram detetados produtos das marcas Dove, L'Oreal Elvive, Herbal Essences e Pantene. Além dos espaços vazios, foram observados vários produtos desalinhados em diversas prateleiras, classificados com severidade baixa."
+}

@@ -1,0 +1,45 @@
+{
+  "inspection_id": "INS_20260612_171329_001",
+  "timestamp": "2026-06-12T17:13:29Z",
+  "image_path": "data/images/normal/train_1.jpg",
+  "zone_id": "Z_S1",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia superior, lado direito",
+      "severity": "medium",
+      "description": "Espaços vazios visíveis na secção de sabonetes líquidos com bomba, indicando baixo stock ou rutura.",
+      "confidence": 0.9,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, lado direito",
+      "severity": "low",
+      "description": "Pequenos espaços vazios na secção de sabonetes em barra e líquidos, sugerindo baixo stock.",
+      "confidence": 0.8,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "misaligned",
+      "location": "várias prateleiras",
+      "severity": "low",
+      "description": "Vários produtos não estão perfeitamente alinhados ou virados para a frente, afetando a apresentação visual.",
+      "confidence": 0.7,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 1.0,
+  "products_detected": [
+    "shampoo",
+    "body_wash",
+    "bar_soap",
+    "hand_soap"
+  ],
+  "model_reasoning": "Prateleira superior: Boa ocupação, produtos alinhados. Prateleira intermédia superior: Espaços vazios visíveis no lado direito, alguns produtos desalinhados. Prateleira intermédia inferior: Boa ocupação, alguns produtos desalinhados. Prateleira inferior: Espaços vazios no lado direito, alguns produtos desalinhados.",
+  "summary": "Inspeção da zona Z_S1 em 2026-06-12T17:13:29Z revela um estado geral de 'warning'. A taxa de ocupação da prateleira é de 88.0%. Os problemas incluem espaços vazios de severidade média na prateleira intermédia superior (lado direito) e de severidade baixa na prateleira inferior (lado direito), afetando principalmente sabonetes líquidos e em barra. Há também produtos desalinhados em várias prateleiras. Os produtos detetados são shampoo, body wash, sabonete em barra e sabonete líquido."
+}

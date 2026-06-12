@@ -1,0 +1,15 @@
+{
+  "inspection_id": "EVAL_cot_visual_ambiguous_test_171_6ab0121c",
+  "timestamp": "2026-06-12T20:11:27Z",
+  "image_path": "data/evaluation_prompting/ambiguous/test_171.jpg",
+  "zone_id": "all",
+  "overall_status": "ok",
+  "issues": [],
+  "shelf_fill_rate": 0.9,
+  "products_detected": [
+    "produtos de higiene feminina"
+  ],
+  "model_reasoning": "Prateleira superior: Produtos bem dispostos, alta ocupação. Prateleira intermédia: Produtos organizados, sem espaços vazios relevantes. Prateleira inferior: Excelente ocupação, produtos bem preenchidos. Geral: Prateleiras bem abastecidas e organizadas, sem problemas significativos de stockout ou desalinhamento.",
+  "summary": "Inspeção realizada em 2026-06-12T20:11:27Z na zona 'all'. O estado geral das prateleiras é 'ok', com uma taxa de preenchimento estimada em 90%. Não foram identificados problemas relevantes como rutura de stock, produtos danificados ou desalinhados. As prateleiras estão bem abastecidas com produtos de higiene feminina.",
+  "prompt_strategy": "cot_visual"
+}

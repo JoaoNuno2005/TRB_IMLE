@@ -1,0 +1,34 @@
+{
+  "inspection_id": "INS_20260612_195604_001",
+  "timestamp": "2026-06-12T19:56:04Z",
+  "image_path": "data/evaluation_prompting/ambiguous/test_171 copy.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "Terceira prateleira, secção esquerda",
+      "severity": "medium",
+      "description": "Espaço vazio significativo na prateleira, indicando falta de stock ou necessidade de reposição imediata.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.1
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "misaligned",
+      "location": "Várias prateleiras, especialmente a terceira e quarta",
+      "severity": "low",
+      "description": "Alguns produtos não estão perfeitamente alinhados ou front-faced, necessitando de organização para melhor apresentação.",
+      "confidence": 0.8,
+      "affected_area_pct": 0.05
+    }
+  ],
+  "shelf_fill_rate": 0.88,
+  "products_detected": [
+    "Pensos higiénicos",
+    "Produtos de higiene pessoal"
+  ],
+  "model_reasoning": "A imagem mostra várias prateleiras de retalho. Observa-se uma grande quantidade de produtos embalados, predominantemente em tons de rosa, azul e verde, com formatos que sugerem pensos higiénicos ou produtos de higiene pessoal. Há uma secção vazia notória na terceira prateleira e alguns produtos estão ligeiramente desalinhados. A maioria das prateleiras está bem abastecida.",
+  "summary": "Análise de prateleira de retalho focada em produtos de higiene pessoal, como pensos higiénicos. A inspeção revela um estado geral de 'warning' devido a uma falha de stock na terceira prateleira (lado esquerdo) e a alguns produtos desalinhados em várias secções. O nível de preenchimento da prateleira é de aproximadamente 88%, indicando um bom abastecimento geral, mas com pontos específicos que requerem atenção para otimização da apresentação e reposição de stock."
+}

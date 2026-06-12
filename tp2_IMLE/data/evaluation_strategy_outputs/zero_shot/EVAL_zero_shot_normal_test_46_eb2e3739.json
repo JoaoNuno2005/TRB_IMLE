@@ -1,0 +1,41 @@
+{
+  "inspection_id": "EVAL_zero_shot_normal_test_46_eb2e3739",
+  "timestamp": "2026-06-12T19:57:56Z",
+  "image_path": "data/evaluation_prompting/normal/test_46.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "Prateleira superior principal, secção central, à direita dos produtos Carmex.",
+      "severity": "medium",
+      "description": "Um espaço vazio significativo é visível na prateleira superior principal, indicando a falta de stock para um ou mais produtos.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.03
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "misaligned",
+      "location": "Várias prateleiras, produtos diversos.",
+      "severity": "low",
+      "description": "Alguns produtos estão ligeiramente desalinhados ou não estão perfeitamente encostados à frente da prateleira, embora a maioria esteja bem organizada.",
+      "confidence": 0.8,
+      "affected_area_pct": 0.05
+    }
+  ],
+  "shelf_fill_rate": 0.92,
+  "products_detected": [
+    "Alívio de Alergias",
+    "Gripe e Constipações",
+    "Alívio da Dor",
+    "Suplementos Imunitários",
+    "Cuidado Labial",
+    "Tiras Nasais",
+    "Pastilhas para a Garganta",
+    "Xaropes para a Tosse"
+  ],
+  "model_reasoning": "A imagem mostra uma prateleira de retalho bem abastecida com uma variedade de produtos farmacêuticos de venda livre. Foi detetado um espaço vazio notável na prateleira superior principal, à direita dos produtos Carmex, o que sugere uma falha de stock. Além disso, alguns produtos apresentam um ligeiro desalinhamento, mas a organização geral é boa. A taxa de preenchimento da prateleira é elevada, indicando que a maioria dos espaços está ocupada.",
+  "summary": "Análise de prateleira de retalho revela um estado geral de 'warning' devido a um espaço vazio significativo na prateleira superior principal, indicando uma falha de stock. Embora a maioria dos produtos esteja bem organizada e a taxa de preenchimento seja alta (92%), foram observados alguns desalinhamentos menores. Os produtos detetados incluem uma vasta gama de medicamentos de venda livre, como alívio de alergias, produtos para gripe e constipações, analgésicos, suplementos imunitários, cuidados labiais, tiras nasais e pastilhas para a garganta. A prateleira necessita de reposição no espaço vazio identificado e de um ligeiro reajuste de alguns produtos para otimizar a apresentação.",
+  "prompt_strategy": "zero_shot"
+}

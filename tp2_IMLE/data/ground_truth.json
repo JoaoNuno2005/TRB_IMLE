@@ -1,0 +1,120 @@
+{
+  "description": "Ground truth manual/semi-manual para avaliação das estratégias de prompting no TP2.",
+  "total_images": 15,
+  "records": [
+    {
+      "image_path": "data/evaluation_prompting/ambiguous/test_132.jpg",
+      "expected_class": "ambiguous",
+      "expected_status": "warning",
+      "expected_issue_types": [
+        "other"
+      ]
+    },
+    {
+      "image_path": "data/evaluation_prompting/ambiguous/test_171 copy.jpg",
+      "expected_class": "ambiguous",
+      "expected_status": "warning",
+      "expected_issue_types": [
+        "other"
+      ]
+    },
+    {
+      "image_path": "data/evaluation_prompting/ambiguous/test_171.jpg",
+      "expected_class": "ambiguous",
+      "expected_status": "warning",
+      "expected_issue_types": [
+        "other"
+      ]
+    },
+    {
+      "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy 2.jpg",
+      "expected_class": "dirty_misaligned",
+      "expected_status": "warning",
+      "expected_issue_types": [
+        "misaligned"
+      ]
+    },
+    {
+      "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy.jpg",
+      "expected_class": "dirty_misaligned",
+      "expected_status": "warning",
+      "expected_issue_types": [
+        "misaligned"
+      ]
+    },
+    {
+      "image_path": "data/evaluation_prompting/dirty_misaligned/test_137.jpg",
+      "expected_class": "dirty_misaligned",
+      "expected_status": "warning",
+      "expected_issue_types": [
+        "misaligned"
+      ]
+    },
+    {
+      "image_path": "data/evaluation_prompting/empty_shelf/test_280.jpg",
+      "expected_class": "empty_shelf",
+      "expected_status": "warning",
+      "expected_issue_types": [
+        "empty_shelf"
+      ]
+    },
+    {
+      "image_path": "data/evaluation_prompting/empty_shelf/test_303.jpg",
+      "expected_class": "empty_shelf",
+      "expected_status": "warning",
+      "expected_issue_types": [
+        "empty_shelf"
+      ]
+    },
+    {
+      "image_path": "data/evaluation_prompting/empty_shelf/test_39.jpg",
+      "expected_class": "empty_shelf",
+      "expected_status": "warning",
+      "expected_issue_types": [
+        "empty_shelf"
+      ]
+    },
+    {
+      "image_path": "data/evaluation_prompting/normal/test_29.jpg",
+      "expected_class": "normal",
+      "expected_status": "ok",
+      "expected_issue_types": []
+    },
+    {
+      "image_path": "data/evaluation_prompting/normal/test_46.jpg",
+      "expected_class": "normal",
+      "expected_status": "ok",
+      "expected_issue_types": []
+    },
+    {
+      "image_path": "data/evaluation_prompting/normal/test_51.jpg",
+      "expected_class": "normal",
+      "expected_status": "ok",
+      "expected_issue_types": []
+    },
+    {
+      "image_path": "data/evaluation_prompting/wrong_product/test_127.jpg",
+      "expected_class": "wrong_product",
+      "expected_status": "warning",
+      "expected_issue_types": [
+        "wrong_product"
+      ]
+    },
+    {
+      "image_path": "data/evaluation_prompting/wrong_product/test_209.jpg",
+      "expected_class": "wrong_product",
+      "expected_status": "warning",
+      "expected_issue_types": [
+        "wrong_product"
+      ]
+    },
+    {
+      "image_path": "data/evaluation_prompting/wrong_product/test_498.jpg",
+      "expected_class": "wrong_product",
+      "expected_status": "warning",
+      "expected_issue_types": [
+        "wrong_product"
+      ]
+    }
+  ]
+}

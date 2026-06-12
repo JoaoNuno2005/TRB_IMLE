@@ -1,0 +1,99 @@
+{
+  "inspection_id": "EVAL_zero_shot_empty_shelf_test_280_8b524f75",
+  "timestamp": "2026-06-12T19:56:40Z",
+  "image_path": "data/evaluation_prompting/empty_shelf/test_280.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "Prateleira superior, lado direito, entre produtos Old Spice e Gillette",
+      "severity": "medium",
+      "description": "Espaço vazio na prateleira superior, indicando falta de stock ou necessidade de reposição.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "Segunda prateleira, lado esquerdo, junto aos produtos Caress",
+      "severity": "medium",
+      "description": "Espaço vazio na segunda prateleira, sugerindo necessidade de reposição de stock.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.03
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "Terceira prateleira, lado esquerdo, junto aos sabonetes Dial",
+      "severity": "medium",
+      "description": "Espaço vazio na terceira prateleira, indicando falta de stock de sabonetes.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.04
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "empty_shelf",
+      "location": "Terceira prateleira, centro, entre sabonetes Lever e Ivory",
+      "severity": "medium",
+      "description": "Espaço vazio no centro da terceira prateleira, necessitando de reposição.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.06
+    },
+    {
+      "issue_id": "ISS_005",
+      "type": "empty_shelf",
+      "location": "Terceira prateleira, lado direito, junto aos sabonetes Irish Spring",
+      "severity": "medium",
+      "description": "Espaço vazio na extremidade direita da terceira prateleira.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.03
+    },
+    {
+      "issue_id": "ISS_006",
+      "type": "empty_shelf",
+      "location": "Quarta prateleira, lado esquerdo, junto aos sabonetes Tone",
+      "severity": "medium",
+      "description": "Espaço vazio na quarta prateleira, lado esquerdo.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.04
+    },
+    {
+      "issue_id": "ISS_007",
+      "type": "empty_shelf",
+      "location": "Quarta prateleira, centro, entre sabonetes Coast e Ivory",
+      "severity": "medium",
+      "description": "Espaço vazio no centro da quarta prateleira.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_008",
+      "type": "empty_shelf",
+      "location": "Quarta prateleira, lado direito, junto aos sabonetes Irish Spring",
+      "severity": "medium",
+      "description": "Espaço vazio na extremidade direita da quarta prateleira.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.03
+    },
+    {
+      "issue_id": "ISS_009",
+      "type": "misaligned",
+      "location": "Várias prateleiras, especialmente na segunda prateleira com produtos Softsoap e Dial",
+      "severity": "low",
+      "description": "Vários produtos estão ligeiramente desalinhados, o que pode afetar a apresentação visual da prateleira.",
+      "confidence": 0.8,
+      "affected_area_pct": 0.1
+    }
+  ],
+  "shelf_fill_rate": 0.85,
+  "products_detected": [
+    "Gel de banho",
+    "Sabonete em barra",
+    "Acessórios de banho"
+  ],
+  "model_reasoning": "A imagem mostra uma prateleira de retalho com quatro níveis, predominantemente preenchida com produtos de higiene pessoal, como gel de banho e sabonetes em barra. Foram identificados múltiplos espaços vazios em todas as prateleiras, variando de pequenos a médios, o que indica a necessidade de reposição de stock. Além disso, alguns produtos apresentam um ligeiro desalinhamento, afetando a organização geral. Não foram observados produtos danificados ou fora do lugar. A taxa de preenchimento da prateleira foi estimada com base na área ocupada pelos produtos versus a área total disponível.",
+  "summary": "Inspeção de prateleira de retalho de produtos de higiene pessoal (gel de banho, sabonetes em barra e acessórios de banho). A prateleira apresenta um estado de 'warning' devido à presença de múltiplos espaços vazios em todos os níveis, sugerindo a necessidade de reposição de stock. Marcas como Suave, Zest, Equate, Axe, Old Spice, Gillette, Caress, Softsoap, Dial, Tone, Irish Spring, Dove Men+Care, Lever, Ivory, Safeguard e Coast são visíveis. A taxa de preenchimento da prateleira é de aproximadamente 85%. Alguns produtos estão ligeiramente desalinhados, mas não há danos visíveis ou produtos incorretos. O foco principal da intervenção deve ser a reposição de stock para otimizar a disponibilidade e a apresentação.",
+  "prompt_strategy": "zero_shot"
+}

@@ -1,0 +1,29 @@
+Converte a regra operacional em português natural para JSON válido.
+Não devolvas texto fora do JSON.
+A regra deve seguir exatamente este schema:
+{
+  "rule_id": "RULE_001",
+  "created_at": "ISO-8601 UTC",
+  "natural_language": "texto original da regra",
+  "description": "reformulação clara e inequívoca em português formal",
+  "conditions": {
+    "zone_filter": ["Z_S1", "Z_S3"],
+    "time_filter": {"hours_start": 10, "hours_end": 13},
+    "issue_types": ["empty_shelf", "damaged"],
+    "severity_threshold": "low|medium|high|null",
+    "fill_rate_threshold": 0.6,
+    "location_filter": "bottom|middle|top|any"
+  },
+  "action": {
+    "alert_level": "info|warning|critical",
+    "notification_message": "template com {rule_id}, {zone_id}, {inspection_id}, {reason}"
+  },
+  "validation": {
+    "is_valid": true,
+    "ambiguities": ["aspetos não claros"],
+    "assumptions": ["pressupostos assumidos"]
+  }
+}
+Se a regra for ambígua ou incompleta, não assumas silenciosamente: validation.is_valid deve ser false e validation.ambiguities deve listar todas as perguntas necessárias.
+Mapeamentos: prateleira inferior=bottom, intermédia=middle, superior=top, vazia=empty_shelf, produto tombado ou embalagem danificada=damaged, produto desalinhado=misaligned, produto errado=wrong_product, etiqueta ausente=label_missing.
+REGRA_ORIGINAL: {rule_text}

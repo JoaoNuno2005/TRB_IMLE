@@ -1,0 +1,46 @@
+{
+  "inspection_id": "INS_20260612_201217_001",
+  "timestamp": "2026-06-12T20:12:17Z",
+  "image_path": "data/evaluation_prompting/empty_shelf/test_280.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, lado direito",
+      "severity": "high",
+      "description": "Área vazia significativa, indicando rutura de stock de produtos Axe/Old Spice.",
+      "confidence": 0.95,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, lado esquerdo",
+      "severity": "medium",
+      "description": "Espaço vazio notável entre produtos Dial e Tone.",
+      "confidence": 0.9,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "misaligned",
+      "location": "prateleira superior, centro",
+      "severity": "low",
+      "description": "Alguns produtos na prateleira superior estão ligeiramente desalinhados.",
+      "confidence": 0.75,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 0.78,
+  "products_detected": [
+    "gel de banho",
+    "champô",
+    "sabonete em barra",
+    "esponjas",
+    "desodorizante"
+  ],
+  "model_reasoning": "Prateleira superior: ocupação alta, pequenos desalinhamentos. Prateleira intermédia: ocupação média, com duas áreas vazias significativas. Prateleira inferior: ocupação alta, produtos bem organizados.",
+  "summary": "Inspeção realizada em 2026-06-12T20:12:17Z na zona 'all'. O estado geral é crítico devido a ruturas de stock evidentes na prateleira intermédia, com uma taxa de ocupação estimada em 78%. Foram detetados produtos como gel de banho, champô, sabonetes em barra, esponjas e desodorizantes. Os problemas incluem espaços vazios significativos na prateleira intermédia, lado direito e esquerdo, e pequenos desalinhamentos na prateleira superior."
+}

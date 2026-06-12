@@ -1,0 +1,38 @@
+{
+  "inspection_id": "EVAL_cot_visual_empty_shelf_test_39_659ca33e",
+  "timestamp": "2026-06-12T20:12:45Z",
+  "image_path": "data/evaluation_prompting/empty_shelf/test_39.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia e inferior, secção Red Bull, lado esquerdo",
+      "severity": "medium",
+      "description": "Espaço vazio significativo na secção de Red Bull, indicando rutura de stock para este produto.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.2
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, secção Propel, lado esquerdo",
+      "severity": "medium",
+      "description": "Espaço vazio notável na secção de Propel, sugerindo rutura de stock para este produto.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.25
+    }
+  ],
+  "shelf_fill_rate": 0.75,
+  "products_detected": [
+    "Monster Energy",
+    "Clear Sparkling Water",
+    "Red Bull",
+    "La Croix",
+    "Propel"
+  ],
+  "model_reasoning": "Prateleira superior: produtos Monster e Clear bem organizados. Prateleira intermédia: espaço vazio significativo na secção Red Bull à esquerda. Prateleira inferior: espaços vazios notáveis nas secções Red Bull e Propel à esquerda.",
+  "summary": "Auditoria visual realizada em 2026-06-12T20:12:45Z na zona 'all'. O estado geral é 'critical' devido a múltiplas ruturas de stock. A taxa de ocupação da prateleira é de 75%. Foram detetados problemas de 'empty_shelf' na prateleira intermédia e inferior na secção de Red Bull (severidade média, 20% da área afetada) e na prateleira inferior na secção de Propel (severidade média, 25% da área afetada). Os produtos visíveis incluem Monster Energy, Clear Sparkling Water, Red Bull, La Croix e Propel.",
+  "prompt_strategy": "cot_visual"
+}

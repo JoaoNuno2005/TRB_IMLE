@@ -1,0 +1,61 @@
+{
+  "inspection_id": "INS_20260612_181350_Z_S2",
+  "timestamp": "2026-06-12T18:13:50Z",
+  "image_path": "/Users/joaonunofonseca/Downloads/tp2_novo/data/images/uploads/20260612_191350_train_170.jpg",
+  "zone_id": "Z_S2",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia 3, lado esquerdo",
+      "severity": "medium",
+      "description": "Área vazia significativa onde deveriam estar produtos Wartner, indicando rutura de stock.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.18
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, lado esquerdo",
+      "severity": "high",
+      "description": "Grande área vazia onde deveriam estar sprays ou desodorizantes para os pés, indicando rutura de stock severa.",
+      "confidence": 0.98,
+      "affected_area_pct": 0.25
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, centro",
+      "severity": "high",
+      "description": "Grande área vazia no centro da prateleira inferior, onde deveriam estar palmilhas Balea, indicando rutura de stock severa.",
+      "confidence": 0.98,
+      "affected_area_pct": 0.2
+    }
+  ],
+  "shelf_fill_rate": 0.7,
+  "products_detected": [
+    "Scholl Gel Activ",
+    "Balea Komfort Sohlen",
+    "Scholl Velvet Smooth",
+    "Scholl Zehenkeile",
+    "Sixtus",
+    "Balea Nagelknipser",
+    "Credo Fussnagel Schere",
+    "Scholl Fussnagel Schere",
+    "Scholl Light Legs",
+    "Balea Fusspflege",
+    "Scholl Fusspflege",
+    "Wartner",
+    "Weleda",
+    "Lavera",
+    "Alverde",
+    "Balea Fuss Peeling",
+    "Balea Fuss Maske",
+    "Balea Fuss Bad",
+    "Balea Fuss Deo",
+    "Balea Frische Sohlen"
+  ],
+  "model_reasoning": "Prateleira superior: Produtos Scholl Gel Activ e Balea Sohlen bem organizados, com pequenas lacunas naturais. Prateleira intermédia 1: Produtos Scholl Velvet Smooth, Zehenkeile, Sixtus e de cuidado de unhas bem preenchidos, com alguns desalinhamentos menores. Prateleira intermédia 2: Produtos de cuidado para os pés Balea e Scholl bem preenchidos, com alguns desalinhamentos menores. Prateleira intermédia 3: Área vazia notável no lado esquerdo, onde deveriam estar produtos Wartner. Prateleira inferior: Grandes áreas vazias no lado esquerdo (sprays/desodorizantes) e no centro (palmilhas Balea).",
+  "summary": "Auditoria visual da prateleira na zona Z_S2, realizada em 2026-06-12T18:13:50Z. A prateleira apresenta um estado crítico com uma taxa de preenchimento estimada em 70%. Foram detetadas ruturas de stock significativas: uma área vazia de severidade média na prateleira intermédia 3 (lado esquerdo, produtos Wartner) e duas áreas vazias de severidade alta na prateleira inferior (lado esquerdo para sprays/desodorizantes e centro para palmilhas Balea). Os produtos visíveis incluem Scholl Gel Activ, Balea Sohlen, Scholl Velvet Smooth, produtos de cuidado para os pés e unhas de várias marcas como Sixtus, Wartner, Weleda, Lavera, Alverde e Balea."
+}

@@ -1,0 +1,7 @@
+Responde à pergunta do gestor usando apenas o contexto recuperado.
+Devolve uma resposta em português europeu, objetiva e operacional.
+Inclui referências explícitas a inspection_id e data sempre que fizeres uma afirmação histórica.
+Se o contexto for insuficiente, diz claramente que não há evidência suficiente.
+PERGUNTA: {query}
+CONTEXTO:
+{context}

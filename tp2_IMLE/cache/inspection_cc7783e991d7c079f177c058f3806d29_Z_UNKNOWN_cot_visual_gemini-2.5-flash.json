@@ -1,0 +1,44 @@
+{
+  "inspection_id": "INS_20260612_182226_001",
+  "timestamp": "2026-06-12T18:22:26Z",
+  "image_path": "data/images/ambiguous/train_100.jpg",
+  "zone_id": "Z_UNKNOWN",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, lado esquerdo",
+      "severity": "high",
+      "description": "Área vazia significativa, indicando rutura de stock de produtos Kool-Aid em canister.",
+      "confidence": 0.95,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "misaligned",
+      "location": "prateleira inferior, centro-direita",
+      "severity": "low",
+      "description": "Alguns produtos Kool-Aid em canister estão empilhados, não perfeitamente alinhados ou frontados.",
+      "confidence": 0.8,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 0.82,
+  "products_detected": [
+    "Crystal Light",
+    "Great Value",
+    "True Lemon",
+    "True Lime",
+    "Mio",
+    "Crush",
+    "Tang",
+    "Kool-Aid",
+    "Hawaiian Punch",
+    "Wyler's Light",
+    "Jolly Rancher",
+    "Country Time"
+  ],
+  "model_reasoning": "Prateleira superior: produtos Crystal Light e Great Value bem preenchidos. Prateleiras intermédias: produtos Crystal Light, True Lemon/Lime, Mio, Crush, Tang, Kool-Aid Singles, Hawaiian Punch e Wyler's Light maioritariamente preenchidos, com alguns desalinhamentos menores. Prateleira inferior: produtos Kool-Aid em canisters, com uma área vazia significativa no lado esquerdo e alguns produtos empilhados.",
+  "summary": "Auditoria visual realizada em 2026-06-12T18:22:26Z na zona Z_UNKNOWN. A taxa de ocupação global da prateleira é de 82%. Foi detetado um problema crítico de rutura de stock na prateleira inferior, lado esquerdo, afetando aproximadamente 15% da área. Adicionalmente, foram observados alguns produtos Kool-Aid empilhados na prateleira inferior, classificados como desalinhamento de baixa severidade. Os produtos visíveis incluem Crystal Light, Great Value, True Lemon/Lime, Mio, Crush, Tang, Kool-Aid, Hawaiian Punch, Wyler's Light, Jolly Rancher e Country Time."
+}

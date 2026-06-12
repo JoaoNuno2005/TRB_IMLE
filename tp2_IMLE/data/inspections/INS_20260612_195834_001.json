@@ -1,0 +1,50 @@
+{
+  "inspection_id": "INS_20260612_195834_001",
+  "timestamp": "2026-06-12T19:58:34Z",
+  "image_path": "data/evaluation_prompting/wrong_product/test_209.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "misaligned",
+      "location": "Várias prateleiras, especialmente as inferiores com latas e caixas de refrigerantes.",
+      "severity": "medium",
+      "description": "Muitos produtos, incluindo garrafas e latas, estão desalinhados e não organizados de forma uniforme, prejudicando a apresentação geral da prateleira.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.35
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "wrong_product",
+      "location": "Segunda prateleira de cima, na secção de refrigerantes de morango.",
+      "severity": "low",
+      "description": "Uma garrafa da marca 'Always Save Strawberry' está colocada entre produtos 'Best Choice Strawberry', indicando uma possível mistura de marcas na mesma secção de sabor.",
+      "confidence": 0.75,
+      "affected_area_pct": 0.005
+    }
+  ],
+  "shelf_fill_rate": 0.88,
+  "products_detected": [
+    "Refrigerantes de Laranja",
+    "Refrigerantes de Uva",
+    "Refrigerantes de Morango",
+    "Refrigerantes de Ananás",
+    "Refrigerantes de Lima-Limão",
+    "Refrigerantes de Cola",
+    "Refrigerantes de Cerveja de Raiz",
+    "Refrigerantes de Fruta (Fruit Punch)",
+    "Refrigerantes de Creme Soda",
+    "Ginger Ale",
+    "Água Tónica",
+    "Club Soda",
+    "Seltzer Water",
+    "Chá Gelado",
+    "Limonada Rosa",
+    "Refrigerantes de Maçã",
+    "Refrigerantes de Pêssego",
+    "Refrigerantes de marca (Crush, IBC, Coca-Cola, Dr. Pepper, Shasta, Country Mist)"
+  ],
+  "model_reasoning": "A imagem mostra uma prateleira de retalho bem abastecida com uma vasta gama de bebidas engarrafadas e enlatadas, incluindo refrigerantes de várias marcas e sabores, água tónica, club soda e chá gelado. A taxa de preenchimento da prateleira é elevada. No entanto, observa-se um desalinhamento generalizado dos produtos em várias secções, especialmente nas prateleiras inferiores com latas e caixas. Além disso, foi detetada uma garrafa de 'Always Save Strawberry' misturada na secção de 'Best Choice Strawberry', sugerindo uma colocação incorreta de marca.",
+  "summary": "Inspeção de prateleira de bebidas revela um bom nível de stock (88% de preenchimento), mas com problemas de organização. Foram identificados desalinhamentos significativos em várias secções de produtos enlatados e engarrafados, afetando a estética da prateleira. Adicionalmente, foi notada uma garrafa de 'Always Save Strawberry' fora da sua secção esperada de 'Best Choice Strawberry', indicando uma mistura de marcas. O estado geral é de 'warning' devido a estas questões de apresentação e colocação de produtos."
+}

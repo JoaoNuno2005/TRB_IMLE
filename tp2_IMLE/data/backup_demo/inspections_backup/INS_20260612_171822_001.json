@@ -1,0 +1,27 @@
+{
+  "inspection_id": "INS_20260612_171822_001",
+  "timestamp": "2026-06-12T17:18:22Z",
+  "image_path": "data/images/empty_shelf/train_16.jpg",
+  "zone_id": "Z_S1",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, lado direito, secção Dulcolax",
+      "severity": "medium",
+      "description": "Espaços vazios visíveis na secção de Dulcolax, indicando falta de stock ou necessidade de reposição.",
+      "confidence": 0.9,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 1.0,
+  "products_detected": [
+    "Suplementos de fibra (Meta Mucil, Benefiber, Phillips Fiber)",
+    "Probióticos (Align, Culturelle, Florastor)",
+    "Laxantes (Dulcolax, Prunelax, Perdiem, Senokot, MiraLAX, Smooth LAX)",
+    "Produtos para hemorroidas (Preparation H, Tucks)"
+  ],
+  "model_reasoning": "Prateleira superior: boa ocupação, produtos alinhados. Prateleira intermédia: secção de Meta Mucil bem preenchida, mas secção de Dulcolax à direita apresenta espaços vazios significativos. Prateleira inferior: boa ocupação geral, alguns pequenos espaços vazios na secção de Preparation H e MiraLAX.",
+  "summary": "Inspeção da zona Z_S1 em 2026-06-12T17:18:22Z. A taxa de ocupação da prateleira é de aproximadamente 82.0%. Foi detetado um problema de stockout (empty_shelf) na prateleira intermédia, lado direito, na secção de Dulcolax, classificado com severidade média. Os produtos visíveis incluem suplementos de fibra, probióticos, laxantes e produtos para hemorroidas."
+}

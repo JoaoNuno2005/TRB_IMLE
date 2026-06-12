@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "tp2_novo",
+			"path": ".."
+		},
+		{
+			"name": "images",
+			"path": "../../images"
+		}
+	],
+	"settings": {}
+}

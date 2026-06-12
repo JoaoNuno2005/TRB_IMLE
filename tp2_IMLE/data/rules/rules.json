@@ -1,0 +1,98 @@
+[
+  {
+    "rule_id": "RULE_001",
+    "created_at": "2023-10-27T10:00:00Z",
+    "natural_language": "Avisa-me quando a prateleira inferior estiver mais de 70% vazia",
+    "description": "Gerar um alerta quando o nível de preenchimento da prateleira inferior for inferior a 30%.",
+    "conditions": {
+      "zone_filter": [],
+      "time_filter": {
+        "hours_start": null,
+        "hours_end": null
+      },
+      "issue_types": [
+        "empty_shelf"
+      ],
+      "severity_threshold": null,
+      "fill_rate_threshold": 0.3,
+      "location_filter": "bottom"
+    },
+    "action": {
+      "alert_level": "warning",
+      "notification_message": "Regra {rule_id} disparada na zona {zone_id}: {reason}"
+    },
+    "validation": {
+      "is_valid": false,
+      "ambiguities": [
+        "Qual o nível de alerta (info, warning, critical) a ser utilizado?",
+        "Qual a mensagem de notificação a ser enviada?"
+      ],
+      "assumptions": [
+        "A condição 'mais de 70% vazia' é interpretada como um 'fill_rate_threshold' de 0.3 (30% de preenchimento), significando que o preenchimento real deve ser inferior a 30% para acionar a regra."
+      ]
+    }
+  },
+  {
+    "rule_id": "RULE_002",
+    "created_at": "2023-10-27T10:35:00Z",
+    "natural_language": "Avisa-me quando a prateleira tiver fill rate abaixo de 85%.",
+    "description": "Gerar um alerta quando a taxa de preenchimento de uma prateleira for inferior a 85%.",
+    "conditions": {
+      "zone_filter": [],
+      "time_filter": {
+        "hours_start": null,
+        "hours_end": null
+      },
+      "issue_types": [],
+      "severity_threshold": null,
+      "fill_rate_threshold": 0.85,
+      "location_filter": "any"
+    },
+    "action": {
+      "alert_level": "warning",
+      "notification_message": "Alerta {rule_id}: Fill rate abaixo de 85% na prateleira. Inspeção {inspection_id}. Razão: {reason}."
+    },
+    "validation": {
+      "is_valid": false,
+      "ambiguities": [
+        "Qual o nível de alerta desejado (informativo, aviso, crítico)?",
+        "A que zonas se aplica esta regra? (Se não especificado, será aplicada a todas as zonas?)",
+        "Existem tipos de problema específicos a considerar, além do fill rate? (Se não especificado, a regra foca-se apenas no fill rate.)",
+        "Existe um filtro de tempo (horas de início e fim) para esta regra?",
+        "Existe um limiar de severidade associado a esta regra?"
+      ],
+      "assumptions": [
+        "A regra aplica-se a qualquer localização de prateleira (inferior, intermédia, superior)."
+      ]
+    }
+  },
+  {
+    "rule_id": "RULE_003",
+    "created_at": "2023-10-27T10:00:00Z",
+    "natural_language": "Quando o fill rate de qualquer zona for inferior a 80%, gerar alerta crítico e pedir reposição imediata.",
+    "description": "Se a taxa de preenchimento (fill rate) de qualquer zona for inferior a 80%, deve ser gerado um alerta de nível crítico e solicitada a reposição imediata dos produtos.",
+    "conditions": {
+      "zone_filter": [],
+      "time_filter": {
+        "hours_start": null,
+        "hours_end": null
+      },
+      "issue_types": [],
+      "severity_threshold": null,
+      "fill_rate_threshold": 0.8,
+      "location_filter": "any"
+    },
+    "action": {
+      "alert_level": "critical",
+      "notification_message": "Reposição imediata necessária na zona {zone_id} devido a baixo fill rate. Regra: {rule_id}."
+    },
+    "validation": {
+      "is_valid": true,
+      "ambiguities": [],
+      "assumptions": [
+        "Assumiu-se que 'qualquer zona' significa que a regra se aplica a todas as zonas sem um filtro específico.",
+        "Assumiu-se que 'pedir reposição imediata' é comunicado através da mensagem de notificação."
+      ]
+    }
+  }
+]

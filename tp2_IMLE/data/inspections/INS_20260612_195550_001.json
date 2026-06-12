@@ -1,0 +1,55 @@
+{
+  "inspection_id": "INS_20260612_195550_001",
+  "timestamp": "2026-06-12T19:55:50Z",
+  "image_path": "data/evaluation_prompting/ambiguous/test_132.jpg",
+  "zone_id": "all",
+  "overall_status": "ok",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "misaligned",
+      "location": "Prateleira superior, lado direito, produtos Ohropax",
+      "severity": "low",
+      "description": "Os produtos Ohropax estão empilhados de forma irregular e não estão perfeitamente alinhados, afetando a organização visual.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.02
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "Prateleira superior, entre Altapharma e Hansaplast, e entre Tetesept e Ohropax",
+      "severity": "low",
+      "description": "Existem pequenas lacunas visíveis na prateleira superior, indicando que alguns produtos podem estar em falta ou não foram repostos.",
+      "confidence": 0.85,
+      "affected_area_pct": 0.03
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "Prateleira do meio, entre Flint Med e Preventivo, e entre Preventivo e Durex",
+      "severity": "low",
+      "description": "Existem pequenas lacunas visíveis na prateleira do meio, sugerindo que alguns produtos podem estar em falta.",
+      "confidence": 0.85,
+      "affected_area_pct": 0.02
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "misaligned",
+      "location": "Prateleira do meio, vários produtos Altapharma e Flint Med",
+      "severity": "low",
+      "description": "Alguns produtos na prateleira do meio não estão totalmente puxados para a frente (fronting), afetando a apresentação visual e a acessibilidade.",
+      "confidence": 0.8,
+      "affected_area_pct": 0.05
+    }
+  ],
+  "shelf_fill_rate": 0.88,
+  "products_detected": [
+    "Cuidados para os pés (cremes, bálsamos, palmilhas)",
+    "Cuidados para feridas (ligaduras, pensos rápidos, sprays, pomadas)",
+    "Bandagens (joelho, tornozelo, pulso)",
+    "Protetores auditivos (tampões)",
+    "Produtos de saúde íntima (preservativos, vibradores)"
+  ],
+  "model_reasoning": "A análise visual da imagem revela uma prateleira de retalho maioritariamente bem abastecida e organizada. Foram identificadas pequenas lacunas e alguns produtos desalinhados, especialmente os tampões Ohropax e alguns itens na prateleira do meio que não estão totalmente à frente. A parte inferior da imagem está significativamente obscurecida, limitando a análise detalhada dessa secção. No geral, não foram detetados produtos danificados ou fora do lugar, nem grandes áreas vazias.",
+  "summary": "A inspeção da prateleira de retalho mostra um estado geral 'ok', com uma taxa de preenchimento de 88%. Foram identificadas pequenas lacunas e desalinhamentos em produtos como os tampões Ohropax e alguns itens de cuidados para feridas e saúde íntima na prateleira do meio. As categorias de produtos visíveis incluem cuidados para os pés, cuidados para feridas, bandagens, protetores auditivos e produtos de saúde íntima. Não foram observadas anomalias graves, mas pequenas melhorias na organização e reposição poderiam otimizar a apresentação."
+}

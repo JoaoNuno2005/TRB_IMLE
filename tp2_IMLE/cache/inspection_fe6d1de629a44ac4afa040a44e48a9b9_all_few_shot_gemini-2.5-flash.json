@@ -1,0 +1,71 @@
+{
+  "inspection_id": "INS_20260612_202422_001",
+  "timestamp": "2026-06-12T20:24:22Z",
+  "image_path": "data/evaluation_prompting/empty_shelf/test_280.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "Prateleira 4, lado esquerdo",
+      "severity": "medium",
+      "description": "Espaço vazio onde deveriam estar produtos Tone body wash, indicando falta de stock.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "Prateleira 5, lado esquerdo",
+      "severity": "high",
+      "description": "Grande área vazia destinada a sabonetes em barra, com ausência total de produtos.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.35
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "Prateleira 5, centro-direita",
+      "severity": "medium",
+      "description": "Espaço vazio notável entre os sabonetes Lever e Ivory.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.1
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "other",
+      "location": "Prateleira 5, centro-direita",
+      "severity": "low",
+      "description": "Expositor de produtos Zest pendurado, obstruindo parcialmente a visibilidade e contribuindo para desorganização visual.",
+      "confidence": 0.8,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_005",
+      "type": "empty_shelf",
+      "location": "Prateleira inferior, lado esquerdo",
+      "severity": "medium",
+      "description": "Espaço vazio ao lado dos sabonetes Coast, indicando falta de stock.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_006",
+      "type": "empty_shelf",
+      "location": "Prateleira inferior, centro",
+      "severity": "medium",
+      "description": "Espaço vazio entre os sabonetes Ivory e Zest.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.1
+    }
+  ],
+  "shelf_fill_rate": 0.78,
+  "products_detected": [
+    "Body Wash",
+    "Bar Soap",
+    "Deodorant"
+  ],
+  "model_reasoning": "A imagem revela múltiplas prateleiras de produtos de higiene pessoal. As prateleiras superiores estão bem abastecidas e organizadas. No entanto, a prateleira 4 apresenta um pequeno espaço vazio à esquerda. A prateleira 5 e a prateleira inferior mostram áreas vazias significativas, indicando falta de stock para sabonetes em barra. Um expositor de produtos Zest pendurado na prateleira 5 contribui para uma ligeira desorganização visual. A taxa de preenchimento geral é afetada por estas lacunas.",
+  "summary": "A análise da imagem da prateleira de retalho de produtos de higiene pessoal revela um estado geral crítico devido a várias áreas com falta de stock. As três prateleiras superiores estão bem preenchidas e os produtos estão alinhados. Contudo, a quarta prateleira tem um espaço vazio notável no lado esquerdo. As prateleiras inferior e a quinta prateleira apresentam lacunas substanciais, especialmente na secção de sabonetes em barra, indicando a necessidade de reabastecimento. Além disso, um expositor de produtos pendurado na quinta prateleira adiciona um elemento de desorganização. A taxa de preenchimento da prateleira é estimada em 78%."
+}

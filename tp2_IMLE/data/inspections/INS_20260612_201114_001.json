@@ -1,0 +1,52 @@
+{
+  "inspection_id": "INS_20260612_201114_001",
+  "timestamp": "2026-06-12T20:11:14Z",
+  "image_path": "data/evaluation_prompting/ambiguous/test_171 copy.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (2ª de cima para baixo), lado esquerdo",
+      "severity": "high",
+      "description": "Área vazia significativa na prateleira, indicando rutura de stock de produtos de higiene feminina.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.25
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (3ª de cima para baixo), lado esquerdo",
+      "severity": "high",
+      "description": "Área vazia significativa na prateleira, indicando rutura de stock de produtos de higiene feminina.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.2
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (4ª de cima para baixo), lado esquerdo",
+      "severity": "high",
+      "description": "Área vazia significativa na prateleira, indicando rutura de stock de produtos de higiene feminina.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.2
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, lado esquerdo",
+      "severity": "high",
+      "description": "Área vazia significativa na prateleira, indicando rutura de stock de produtos de higiene feminina.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.2
+    }
+  ],
+  "shelf_fill_rate": 0.68,
+  "products_detected": [
+    "Produtos de higiene feminina",
+    "Pensos higiénicos"
+  ],
+  "model_reasoning": "Prateleira superior ocupada por caixas de armazenamento. Prateleira intermédia (1ª de cima para baixo, de retalho) geralmente bem preenchida. Prateleira intermédia (2ª de cima para baixo, de retalho) apresenta área vazia significativa no lado esquerdo. Prateleira intermédia (3ª de cima para baixo, de retalho) apresenta área vazia significativa no lado esquerdo. Prateleira intermédia (4ª de cima para baixo, de retalho) apresenta área vazia significativa no lado esquerdo. Prateleira inferior apresenta área vazia significativa no lado esquerdo. Produtos restantes nas prateleiras de retalho estão razoavelmente alinhados.",
+  "summary": "Inspeção da zona 'all' em 2026-06-12T20:11:14Z revela um estado 'critical'. O fill rate da prateleira é de 0.68, com múltiplas ruturas de stock de produtos de higiene feminina. Foram identificadas áreas vazias significativas nas prateleiras intermédias (2ª, 3ª e 4ª de cima para baixo) e na prateleira inferior, todas no lado esquerdo, classificadas com severidade 'high'."
+}

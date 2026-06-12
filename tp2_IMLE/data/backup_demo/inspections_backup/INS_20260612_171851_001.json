@@ -1,0 +1,67 @@
+{
+  "inspection_id": "INS_20260612_171851_001",
+  "timestamp": "2026-06-12T17:18:51Z",
+  "image_path": "data/images/wrong_product/train_50.jpg",
+  "zone_id": "Z_S1",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "misaligned",
+      "location": "prateleiras intermédias e inferior, secção central e esquerda",
+      "severity": "medium",
+      "description": "Muitos produtos (cremes de barbear, loções, desodorizantes) estão desalinhados ou não estão virados para a frente, afetando a apresentação visual.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.35
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (sacos de lâminas), lado direito",
+      "severity": "medium",
+      "description": "Espaço vazio notável na prateleira onde estão empilhados sacos de lâminas de barbear.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.1
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "secção direita (desodorizantes), segunda e terceira prateleiras de cima para baixo",
+      "severity": "medium",
+      "description": "Lacunas visíveis em várias linhas de produtos desodorizantes, indicando falta de stock em algumas referências.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "misaligned",
+      "location": "prateleira superior (produtos pendurados)",
+      "severity": "low",
+      "description": "Alguns produtos pendurados (aparelhos de barbear) estão ligeiramente desalinhados ou sobrepostos.",
+      "confidence": 0.8,
+      "affected_area_pct": 0.05
+    }
+  ],
+  "shelf_fill_rate": 0.82,
+  "products_detected": [
+    "Aparelhos de barbear Gillette",
+    "Lâminas de barbear Caliber 5",
+    "Aparelhos de barbear Venus",
+    "Aparelhos de barbear Bic",
+    "Gel de barbear Edge",
+    "Creme de barbear Cremo",
+    "Loção Kiss My Face",
+    "Produtos Every Man Jack",
+    "Creme de barbear Pure Silk",
+    "Desodorizantes Speed Stick",
+    "Desodorizantes Old Spice",
+    "Produtos Nivea",
+    "Creme de barbear Foamy",
+    "Creme de barbear Barbasol",
+    "Desodorizante Brut",
+    "Desodorizante Degree",
+    "Desodorizante Right Guard"
+  ],
+  "model_reasoning": "Prateleira superior: Produtos pendurados (lâminas e aparelhos de barbear) estão bem preenchidos, mas alguns estão ligeiramente desalinhados ou sobrepostos. Há pequenos espaços vazios entre alguns produtos. Prateleira intermédia (logo abaixo dos produtos pendurados): Sacos de lâminas e aparelhos de barbear estão empilhados. Há um espaço vazio notável no lado direito desta prateleira. Prateleira intermédia (cremes de barbear e desodorizantes): Produtos em spray e tubos estão presentes. Muitos produtos estão desalinhados ou não estão perfeitamente virados para a frente. Há alguns espaços vazios menores. Prateleira inferior: Produtos em tubos e caixas. Similar à prateleira intermédia, muitos produtos estão desalinhados. Há alguns espaços vazios menores. Secção direita (desodorizantes): Várias prateleiras com desodorizantes. Há espaços vazios visíveis na segunda e terceira prateleiras de cima para baixo, indicando falta de stock em algumas linhas de produto.",
+  "summary": "Inspeção da zona Z_S1 em 2026-06-12T17:18:51Z. O estado geral é 'warning' devido a múltiplos problemas de desalinhamento de produtos nas prateleiras intermédias e inferior (cremes de barbear, loções, desodorizantes), afetando cerca de 35% da área. Foram identificados espaços vazios significativos na prateleira intermédia de sacos de lâminas (lado direito) e na secção de desodorizantes (segunda e terceira prateleiras de cima para baixo), com uma taxa de preenchimento de prateleira estimada em 82.0%. Os produtos detetados incluem uma variedade de aparelhos de barbear, lâminas, cremes, géis, loções e desodorizantes de diversas marcas."
+}

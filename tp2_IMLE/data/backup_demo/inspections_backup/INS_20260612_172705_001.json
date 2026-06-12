@@ -1,0 +1,43 @@
+{
+  "inspection_id": "INS_20260612_172705_001",
+  "timestamp": "2026-06-12T17:27:05Z",
+  "image_path": "/Users/joaonunofonseca/Downloads/tp2_novo/data/images/uploads/20260612_182705_train_799.jpg",
+  "zone_id": "Z_S1",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira superior, lado esquerdo",
+      "severity": "low",
+      "description": "Pequeno espaço vazio na prateleira superior, lado esquerdo, onde deveriam estar produtos OMO.",
+      "confidence": 0.95,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, lado esquerdo",
+      "severity": "low",
+      "description": "Pequeno espaço vazio na prateleira inferior, lado esquerdo, onde deveriam estar produtos OMO.",
+      "confidence": 0.95,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "misaligned",
+      "location": "várias prateleiras, lado esquerdo (produtos OMO)",
+      "severity": "low",
+      "description": "Alguns produtos OMO estão ligeiramente desalinhados em várias prateleiras, não apresentando uma frente uniforme.",
+      "confidence": 0.8,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 1.0,
+  "products_detected": [
+    "OMO (detergente/sabonete)",
+    "Detergente/Sabonete (marca chinesa)"
+  ],
+  "model_reasoning": "Prateleira superior: Pequeno espaço vazio no canto esquerdo, produtos OMO ligeiramente desalinhados. Prateleiras intermédias: Geralmente bem preenchidas, com alguns produtos desalinhados. Prateleiras inferiores: Pequeno espaço vazio no canto esquerdo, produtos OMO ligeiramente desalinhados.",
+  "summary": "Inspeção da zona Z_S1 em 2026-06-12T17:27:05Z. O status geral é 'warning' devido a pequenos espaços vazios nas prateleiras superior e inferior esquerdas (severidade baixa) e desalinhamento de produtos OMO em várias prateleiras (severidade baixa). A taxa de preenchimento da prateleira é de 92.0%. Foram detetados produtos OMO e uma marca chinesa de detergente/sabonete."
+}

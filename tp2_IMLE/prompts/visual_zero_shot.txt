@@ -1,0 +1,26 @@
+Analisa a imagem de uma prateleira de retalho e devolve apenas JSON válido.
+A resposta tem de cumprir este schema:
+{
+  "inspection_id": "INS_YYYYMMDD_HHMMSS_XXX",
+  "timestamp": "ISO-8601 UTC",
+  "image_path": "caminho da imagem",
+  "zone_id": "zona recebida",
+  "overall_status": "ok|warning|critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf|wrong_product|damaged|misaligned|label_missing|other",
+      "location": "localização visível na prateleira",
+      "severity": "low|medium|high",
+      "description": "descrição objetiva em português europeu",
+      "confidence": 0.0,
+      "affected_area_pct": 0.0
+    }
+  ],
+  "shelf_fill_rate": 0.0,
+  "products_detected": ["categorias visíveis"],
+  "model_reasoning": "evidência visual observável usada antes da classificação final",
+  "summary": "resumo semântico rico para indexação RAG"
+}
+Usa valores entre 0 e 1 em confidence, affected_area_pct e shelf_fill_rate.
+Não inventes produtos que não estejam visualmente suportados.

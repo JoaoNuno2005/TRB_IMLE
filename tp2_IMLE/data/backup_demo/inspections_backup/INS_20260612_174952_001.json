@@ -1,0 +1,30 @@
+{
+  "inspection_id": "INS_20260612_174952_001",
+  "timestamp": "2026-06-12T17:49:52Z",
+  "image_path": "/Users/joaonunofonseca/Downloads/tp2_novo/data/images/uploads/20260612_184952_test_2607.jpg",
+  "zone_id": "Z_S2",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, centro-esquerda",
+      "severity": "high",
+      "description": "Grande área vazia na prateleira intermédia, indicando rutura de stock para produtos de higiene pessoal (body wash).",
+      "confidence": 1.0,
+      "affected_area_pct": 0.18
+    }
+  ],
+  "shelf_fill_rate": 0.8,
+  "products_detected": [
+    "body wash",
+    "shampoo",
+    "bar soap",
+    "toilet bowl cleaner",
+    "bleach",
+    "all-purpose cleaner",
+    "drain opener"
+  ],
+  "model_reasoning": "Prateleira superior: produtos de higiene pessoal bem preenchidos, com pequenas lacunas. Prateleira intermédia: secção central-esquerda com grande espaço vazio, rutura de stock evidente. Prateleira inferior: produtos de limpeza e sabonetes em barra bem organizados e preenchidos.",
+  "summary": "Inspeção da zona Z_S2 em 2026-06-12T17:49:52Z. A taxa de ocupação da prateleira é de 80%. Foi detetado um problema crítico de rutura de stock na prateleira intermédia, centro-esquerda, afetando produtos de higiene pessoal. As prateleiras superior e inferior estão bem preenchidas com produtos como body wash, shampoo, sabonetes em barra e produtos de limpeza."
+}

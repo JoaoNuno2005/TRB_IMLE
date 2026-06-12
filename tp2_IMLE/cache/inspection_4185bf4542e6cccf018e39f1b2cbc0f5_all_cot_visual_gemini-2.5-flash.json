@@ -1,0 +1,34 @@
+{
+  "inspection_id": "INS_20260612_201351_XXX",
+  "timestamp": "2026-06-12T20:13:51Z",
+  "image_path": "data/evaluation_prompting/wrong_product/test_127.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, lado direito",
+      "severity": "medium",
+      "description": "Área vazia visível na secção de produtos 'Always' azuis, indicando rutura de stock para um SKU específico.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.18
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, lado direito",
+      "severity": "high",
+      "description": "Grande área vazia na secção de produtos 'Always' azuis, indicando uma rutura de stock mais significativa.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.28
+    }
+  ],
+  "shelf_fill_rate": 0.8,
+  "products_detected": [
+    "pensos higiénicos",
+    "toalhitas de higiene"
+  ],
+  "model_reasoning": "Prateleira superior: Produtos de higiene feminina bem preenchidos, com algumas pequenas lacunas naturais. Prateleira intermédia: Lado esquerdo com produtos de higiene feminina em embalagens azuis e rosas, alguns empilhados. Lado direito com produtos 'Always' em embalagens azuis, mas com uma área vazia notável no centro. Prateleira inferior: Lado esquerdo com produtos de higiene feminina em embalagens azuis e rosas. Lado direito com produtos 'Always' em embalagens azuis, mas com uma área vazia significativa.",
+  "summary": "Inspeção da zona 'all' realizada em 2026-06-12T20:13:51Z. O estado geral é 'critical' devido a duas ruturas de stock. A prateleira intermédia, lado direito, apresenta uma área vazia de severidade média (18% da secção) para pensos higiénicos 'Always'. A prateleira inferior, lado direito, tem uma grande área vazia de severidade alta (28% da secção) também para pensos higiénicos 'Always'. A taxa de ocupação global da prateleira é estimada em 80%."
+}

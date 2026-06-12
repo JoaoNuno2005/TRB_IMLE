@@ -1,0 +1,78 @@
+{
+  "inspection_id": "EVAL_zero_shot_empty_shelf_test_303_64d9b206",
+  "timestamp": "2026-06-12T19:56:59Z",
+  "image_path": "data/evaluation_prompting/empty_shelf/test_303.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "Prateleira 3, secção esquerda (abaixo das cápsulas Great Value Breakfast Blend)",
+      "severity": "medium",
+      "description": "Espaço vazio significativo na prateleira, indicando falta de stock de cápsulas de café.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "Prateleira 3, secção direita (abaixo dos sacos Caribou Coffee)",
+      "severity": "low",
+      "description": "Pequeno espaço vazio na prateleira, sugerindo necessidade de reposição de café moído.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.05
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "Prateleira 4, secção central (abaixo dos sacos Gevalia Kaffe)",
+      "severity": "high",
+      "description": "Grande espaço vazio na prateleira, indicando uma falha de stock considerável de café moído.",
+      "confidence": 0.98,
+      "affected_area_pct": 0.3
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "empty_shelf",
+      "location": "Prateleira 5, secção esquerda (abaixo das cápsulas Great Value Breakfast Blend)",
+      "severity": "medium",
+      "description": "Espaço vazio na prateleira inferior, necessitando de reposição de cápsulas de café.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.2
+    },
+    {
+      "issue_id": "ISS_005",
+      "type": "empty_shelf",
+      "location": "Prateleira 5, secção central (abaixo dos Biscotti Bites)",
+      "severity": "medium",
+      "description": "Espaço vazio na prateleira inferior, indicando falta de stock de produtos relacionados com café.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.25
+    },
+    {
+      "issue_id": "ISS_006",
+      "type": "misaligned",
+      "location": "Várias prateleiras (2, 3, 4, 5)",
+      "severity": "low",
+      "description": "Alguns produtos (sacos de café, caixas de cápsulas, garrafas de xarope e cremes) estão desalinhados ou não estão perfeitamente virados para a frente, afetando a apresentação visual.",
+      "confidence": 0.85,
+      "affected_area_pct": 0.1
+    }
+  ],
+  "shelf_fill_rate": 0.73,
+  "products_detected": [
+    "Café moído",
+    "Café em grão",
+    "Cápsulas de café",
+    "Café instantâneo",
+    "Xaropes para café",
+    "Cremes para café líquidos",
+    "Cremes para café em pó",
+    "Concentrados de café",
+    "Snacks"
+  ],
+  "model_reasoning": "A análise visual identificou várias secções vazias nas prateleiras 3, 4 e 5, que são áreas de venda primárias para produtos de café. A prateleira superior foi reconhecida como área de armazenamento, não sendo avaliada para falhas de stock de venda direta. Foram detetados diferentes tipos de café (moído, em grão, cápsulas, instantâneo) e acessórios (xaropes, cremes). A taxa de preenchimento foi estimada com base no espaço ocupado versus vazio. O desalinhamento de produtos foi também um fator observado em várias prateleiras.",
+  "summary": "A inspeção da prateleira de retalho de café e produtos relacionados revela um estado crítico devido a múltiplas e significativas falhas de stock. Grandes secções vazias foram identificadas nas prateleiras 3, 4 e 5, afetando a disponibilidade de cápsulas de café, café moído e outros produtos. Adicionalmente, observou-se um desalinhamento geral de alguns produtos, comprometendo a organização e a apresentação visual. A taxa de preenchimento da prateleira é de aproximadamente 73%, indicando uma necessidade urgente de reposição e reabastecimento para melhorar a experiência do cliente e as vendas.",
+  "prompt_strategy": "zero_shot"
+}

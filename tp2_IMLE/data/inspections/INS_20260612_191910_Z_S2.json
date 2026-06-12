@@ -1,0 +1,29 @@
+{
+  "inspection_id": "INS_20260612_191910_Z_S2",
+  "timestamp": "2026-06-12T19:19:10Z",
+  "image_path": "data/images/empty_shelf/test_39.jpg",
+  "zone_id": "Z_S2",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, secção dos produtos Rockstar, lado direito",
+      "severity": "high",
+      "description": "Grande espaço vazio na prateleira inferior onde deveriam estar mais produtos Rockstar, indicando rutura de stock para essa secção.",
+      "confidence": 0.95,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 0.8,
+  "products_detected": [
+    "Monster Energy",
+    "Red Bull",
+    "Rockstar Energy",
+    "Clear Sparkling Water",
+    "La Croix Sparkling Water",
+    "Propel Water"
+  ],
+  "model_reasoning": "Prateleira superior e intermédia bem preenchidas com produtos Monster, Red Bull e Clear. Prateleira inferior apresenta uma área vazia significativa na secção dos produtos Rockstar.",
+  "summary": "Inspeção da zona Z_S2 em 2026-06-12T19:19:10Z. A taxa de ocupação da prateleira é de aproximadamente 80%. Foi detetado um problema crítico de rutura de stock (empty_shelf) na prateleira inferior, na secção dos produtos Rockstar, com cerca de 35% da área afetada. Os produtos visíveis incluem bebidas energéticas (Monster, Red Bull, Rockstar) e águas com gás (Clear, La Croix, Propel)."
+}

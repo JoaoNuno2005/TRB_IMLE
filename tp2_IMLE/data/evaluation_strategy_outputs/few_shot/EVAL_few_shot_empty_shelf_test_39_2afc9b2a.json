@@ -1,0 +1,48 @@
+{
+  "inspection_id": "EVAL_few_shot_empty_shelf_test_39_2afc9b2a",
+  "timestamp": "2026-06-12T20:24:54Z",
+  "image_path": "data/evaluation_prompting/empty_shelf/test_39.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, lado direito (abaixo de Red Bull)",
+      "severity": "medium",
+      "description": "Espaço vazio significativo na prateleira inferior, à direita dos produtos Red Bull e antes dos produtos Star/Propel.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, lado esquerdo (abaixo de Star/Propel)",
+      "severity": "medium",
+      "description": "Espaço vazio notável na prateleira inferior, à esquerda dos produtos Propel e La Croix.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.15
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "prateleira mais baixa, lado direito da imagem, à esquerda dos produtos Propel",
+      "severity": "medium",
+      "description": "Espaço vazio na prateleira mais baixa, à esquerda dos pacotes de Propel.",
+      "confidence": 0.9,
+      "affected_area_pct": 0.1
+    }
+  ],
+  "shelf_fill_rate": 0.9,
+  "products_detected": [
+    "Monster Energy Drink",
+    "Red Bull Energy Drink",
+    "Clear Sparkling Water",
+    "La Croix Sparkling Water",
+    "Propel Water",
+    "Star Energy Drink"
+  ],
+  "model_reasoning": "A imagem mostra uma prateleira de retalho com uma variedade de bebidas energéticas e águas com gás. As prateleiras superiores estão bem abastecidas com produtos Monster Energy e Clear Sparkling Water. No entanto, há três secções vazias visíveis nas prateleiras inferiores, indicando falta de stock ou necessidade de reabastecimento. Os produtos estão geralmente alinhados, mas a presença de múltiplos espaços vazios justifica o status de 'warning'.",
+  "summary": "A prateleira de retalho apresenta uma seleção de bebidas energéticas (Monster, Red Bull, Star) e águas com gás/sabor (Clear, La Croix, Propel). A maioria das prateleiras está bem abastecida e os produtos estão razoavelmente organizados. Contudo, foram identificadas três áreas com falta de produto: uma na prateleira inferior à direita (abaixo de Red Bull), outra na prateleira inferior à esquerda (abaixo de Star/Propel) e uma terceira na prateleira mais baixa, à esquerda dos produtos Propel no lado direito da imagem. Estas lacunas afetam a taxa de preenchimento da prateleira e a apresentação geral, resultando num status de 'warning'.",
+  "prompt_strategy": "few_shot"
+}

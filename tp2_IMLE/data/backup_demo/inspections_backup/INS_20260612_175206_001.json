@@ -1,0 +1,50 @@
+{
+  "inspection_id": "INS_20260612_175206_001",
+  "timestamp": "2026-06-12T17:52:06Z",
+  "image_path": "/Users/joaonunofonseca/Downloads/tp2_novo/data/images/uploads/20260612_185206_test_2607.jpg",
+  "zone_id": "Z_S2",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, centro-esquerda",
+      "severity": "high",
+      "description": "Grande área vazia na prateleira intermédia, indicando rutura de stock ou falha de reposição significativa.",
+      "confidence": 1.0,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "other",
+      "location": "prateleira intermédia, centro-esquerda",
+      "severity": "medium",
+      "description": "Expositor pendurado (provavelmente lâminas ou acessórios) está à frente da prateleira, obstruindo a visão e a área vazia.",
+      "confidence": 0.9,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 0.75,
+  "products_detected": [
+    "Clorox Bleach",
+    "Lysol Power",
+    "The Works Toilet Bowl Cleaner",
+    "Comet Cleanser",
+    "Drain Opener",
+    "TopCare Body Wash",
+    "Olay Body Wash",
+    "Ivory Body Wash",
+    "Zest Body Wash",
+    "Softsoap Body Wash",
+    "St. Ives Body Wash",
+    "Tone Body Wash",
+    "Dove Bar Soap",
+    "Dial Bar Soap",
+    "Zest Bar Soap",
+    "Olay Bar Soap",
+    "Ivory Bar Soap",
+    "Lever Bar Soap"
+  ],
+  "model_reasoning": "Prateleira superior: Produtos de higiene pessoal e limpeza, bem preenchida, sem falhas visíveis de stock ou desalinhamentos significativos. Prateleira intermédia: Produtos de limpeza à esquerda (Lysol), depois uma secção vazia considerável no centro-esquerda, parcialmente obscurecida por um expositor pendurado. À direita, sabonetes em barra (Dove, Dial, Zest) bem preenchidos. Prateleira inferior: Produtos de limpeza (The Works, Comet, Drain Opener) à esquerda, e sabonetes em barra e líquidos (Dove, Olay, Ivory, Lever, Dial, Zest) no centro e direita, bem preenchidos.",
+  "summary": "Inspeção da zona Z_S2 em 2026-06-12T17:52:06Z. O estado geral é crítico devido a uma rutura de stock significativa (empty_shelf) na prateleira intermédia, centro-esquerda, afetando cerca de 25% da secção. Um expositor pendurado também obstrui a visão nesta área. A taxa de ocupação global da prateleira é estimada em 0.75. Foram detetados produtos de limpeza e higiene pessoal de várias marcas como Clorox, Lysol, Dove, Olay, Ivory, Zest, entre outros."
+}

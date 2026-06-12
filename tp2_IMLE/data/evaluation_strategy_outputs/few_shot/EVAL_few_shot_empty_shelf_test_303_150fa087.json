@@ -1,0 +1,31 @@
+{
+  "inspection_id": "EVAL_few_shot_empty_shelf_test_303_150fa087",
+  "timestamp": "2026-06-12T20:24:41Z",
+  "image_path": "data/evaluation_prompting/empty_shelf/test_303.jpg",
+  "zone_id": "all",
+  "overall_status": "warning",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira central inferior (terceira prateleira de produtos, à direita)",
+      "severity": "medium",
+      "description": "Espaço vazio considerável na prateleira, indicando falta de stock ou necessidade de reabastecimento para os produtos que deveriam estar nesta secção.",
+      "confidence": 0.95,
+      "affected_area_pct": 0.25
+    }
+  ],
+  "shelf_fill_rate": 0.91,
+  "products_detected": [
+    "café moído",
+    "café em grão",
+    "cápsulas de café",
+    "cremes de café líquidos",
+    "cremes de café em pó",
+    "xaropes de café",
+    "biscoitos"
+  ],
+  "model_reasoning": "A maioria das prateleiras está bem abastecida e organizada com produtos de café, cremes e xaropes. No entanto, foi identificada uma secção vazia significativa na terceira prateleira de produtos (contando de cima para baixo), indicando uma potencial rutura de stock ou necessidade de reabastecimento. Os produtos restantes estão geralmente alinhados e as etiquetas de preço são visíveis.",
+  "summary": "A imagem exibe uma secção de café de retalho com quatro prateleiras principais de produtos. As prateleiras superiores e inferiores estão bem abastecidas com uma variedade de cafés (moídos, em grão, cápsulas), cremes e xaropes. A organização geral é boa, com produtos alinhados e etiquetas de preço visíveis. Contudo, na terceira prateleira de produtos (contando de cima para baixo), observa-se uma área vazia considerável na secção direita, sugerindo uma falha no reabastecimento ou esgotamento de stock para os produtos que deveriam estar ali. Esta área vazia afeta aproximadamente 25% daquele segmento da prateleira, resultando num estado geral de 'warning' para a zona.",
+  "prompt_strategy": "few_shot"
+}

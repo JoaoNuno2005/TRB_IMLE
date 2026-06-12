@@ -1,0 +1,65 @@
+{
+  "inspection_id": "INS_20260612_201201_001",
+  "timestamp": "2026-06-12T20:12:01Z",
+  "image_path": "data/evaluation_prompting/dirty_misaligned/test_137.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "wrong_product",
+      "location": "prateleira superior (topo)",
+      "severity": "high",
+      "description": "Peluches grandes e não relacionados com produtos de supermercado ou bebidas estão expostos na prateleira superior.",
+      "confidence": 1.0,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia, lado direito",
+      "severity": "medium",
+      "description": "Secção significativa da prateleira vazia, indicando rutura de stock ou falta de reposição de garrafas de Coca-Cola.",
+      "confidence": 1.0,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia inferior, lado esquerdo",
+      "severity": "medium",
+      "description": "Secção significativa da prateleira vazia, indicando rutura de stock ou falta de reposição de garrafas de Coca-Cola.",
+      "confidence": 1.0,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "other",
+      "location": "prateleira intermédia, centro",
+      "severity": "medium",
+      "description": "Exposição de palhinhas pendurada, obstruindo parcialmente a visibilidade e o acesso aos produtos de bebida.",
+      "confidence": 1.0,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_005",
+      "type": "misaligned",
+      "location": "várias prateleiras",
+      "severity": "low",
+      "description": "Garrafas e packs de latas ligeiramente desalinhados em várias prateleiras, afetando a apresentação geral.",
+      "confidence": 0.8,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 0.82,
+  "products_detected": [
+    "Coca-Cola",
+    "Diet Coke",
+    "Sprite",
+    "Seagram's",
+    "Mello Yello",
+    "Pepsi"
+  ],
+  "model_reasoning": "Prateleira superior: Presença de peluches grandes, não relacionados com produtos de supermercado ou bebidas. Prateleira 1: Garrafas de Coca-Cola, Diet Coke e Sprite, maioritariamente cheia, com alguns desalinhamentos menores. Prateleira 2: Garrafas de Coca-Cola e Diet Coke. Espaço vazio significativo no lado direito. Exposição de palhinhas no centro, obstruindo produtos. Prateleira 3: Garrafas de Coca-Cola e Diet Coke. Espaço vazio significativo no lado esquerdo. Prateleira inferior: Packs de latas de Sprite, Diet Coke e Coca-Cola. Bem preenchida, com alguns desalinhamentos de caixas.",
+  "summary": "Auditoria visual realizada em 2026-06-12T20:12:01Z na zona 'all'. O estado geral é 'critical' devido à presença de peluches na prateleira superior (problema de alta severidade), duas secções vazias significativas nas prateleiras intermédias (severidade média) e uma exposição de palhinhas que obstrui produtos. A taxa de ocupação da prateleira é estimada em 82%, com produtos como Coca-Cola, Diet Coke e Sprite visíveis. Existem também desalinhamentos menores em várias prateleiras."
+}

@@ -1,0 +1,77 @@
+{
+  "inspection_id": "INS_20260612_201149_001",
+  "timestamp": "2026-06-12T20:11:49Z",
+  "image_path": "data/evaluation_prompting/dirty_misaligned/test_137 copy.jpg",
+  "zone_id": "all",
+  "overall_status": "critical",
+  "issues": [
+    {
+      "issue_id": "ISS_001",
+      "type": "empty_shelf",
+      "location": "prateleira intermédia (segunda de cima para baixo), lado direito",
+      "severity": "high",
+      "description": "Grande área vazia na prateleira intermédia, indicando rutura de stock de garrafas de refrigerante.",
+      "confidence": 0.95,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_002",
+      "type": "empty_shelf",
+      "location": "prateleira superior (primeira de cima para baixo), lado direito",
+      "severity": "medium",
+      "description": "Espaço vazio visível na prateleira superior, com ausência de garrafas de refrigerante.",
+      "confidence": 0.9,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_003",
+      "type": "empty_shelf",
+      "location": "prateleira inferior, lado esquerdo",
+      "severity": "low",
+      "description": "Pequena área vazia na prateleira inferior, onde deveriam estar caixas de refrigerante.",
+      "confidence": 0.85,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_004",
+      "type": "misaligned",
+      "location": "várias prateleiras (garrafas e caixas)",
+      "severity": "low",
+      "description": "Algumas garrafas e caixas de refrigerante estão ligeiramente desalinhadas nas prateleiras.",
+      "confidence": 0.8,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_005",
+      "type": "wrong_product",
+      "location": "prateleira superior (acima dos produtos)",
+      "severity": "medium",
+      "description": "Brinquedos de pelúcia (cães e ursos) estão colocados na prateleira superior, acima dos produtos de venda de refrigerantes.",
+      "confidence": 0.95,
+      "affected_area_pct": 1.0
+    },
+    {
+      "issue_id": "ISS_006",
+      "type": "other",
+      "location": "prateleira intermédia, centro",
+      "severity": "low",
+      "description": "Um display de palhinhas está pendurado na prateleira intermédia, obstruindo parcialmente a visualização de alguns produtos.",
+      "confidence": 0.9,
+      "affected_area_pct": 1.0
+    }
+  ],
+  "shelf_fill_rate": 0.75,
+  "products_detected": [
+    "Coca-Cola",
+    "Diet Coke",
+    "Sprite",
+    "Pepsi",
+    "Seagram's",
+    "Mello Yello",
+    "Dr. Pepper",
+    "brinquedos de pelúcia",
+    "palhinhas"
+  ],
+  "model_reasoning": "Prateleira superior com brinquedos de pelúcia e pequena falha de stock à direita. Prateleira intermédia com grande falha de stock no centro-direita e display de palhinhas. Prateleira inferior com pequena falha de stock à esquerda e alguns produtos desalinhados.",
+  "summary": "Auditoria visual realizada em 2026-06-12T20:11:49Z na zona 'all'. O estado geral é 'critical' devido a uma rutura de stock significativa na prateleira intermédia (lado direito), afetando aproximadamente 35% da secção. Foram também identificadas falhas de stock de severidade média na prateleira superior (lado direito) e baixa na prateleira inferior (lado esquerdo). O fill rate estimado é de 0.75. Além disso, foram observados brinquedos de pelúcia fora de lugar na prateleira superior e um display de palhinhas que obstrui produtos na prateleira intermédia. Alguns produtos de Coca-Cola, Diet Coke, Sprite e Pepsi estão ligeiramente desalinhados."
+}
